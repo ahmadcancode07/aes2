@@ -1,0 +1,1612 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{17_abbas2015svm}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=da0eb9d34f4ccc0cfaa6bf61bcd981c8}{%
+           family={Abbas},
+           familyi={A\bibinitperiod},
+           given={Ayad\bibnamedelima R},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=8bd9aeec02757ae5aaa8a21b8c0484a5}{%
+           family={Al-qazaz},
+           familyi={A\bibinithyphendelim q\bibinitperiod},
+           given={Ahmed\bibnamedelima S},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {University of Technology-Iraq}%
+      }
+      \strng{namehash}{c47b989af8728c7bb1177c8e8c80b131}
+      \strng{fullhash}{f66434451134a3226b3e36afe7c25855}
+      \strng{fullhashraw}{f66434451134a3226b3e36afe7c25855}
+      \strng{bibnamehash}{c47b989af8728c7bb1177c8e8c80b131}
+      \strng{authorbibnamehash}{c47b989af8728c7bb1177c8e8c80b131}
+      \strng{authornamehash}{c47b989af8728c7bb1177c8e8c80b131}
+      \strng{authorfullhash}{f66434451134a3226b3e36afe7c25855}
+      \strng{authorfullhashraw}{f66434451134a3226b3e36afe7c25855}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Engineering and Technology Journal}
+      \field{number}{3}
+      \field{title}{Automated arabic essay scoring (aaes) using vectors space model (vsm) and latent semantics indexing (lsi)}
+      \field{volume}{33}
+      \field{year}{2015}
+      \field{pages}{410\bibrangedash 426}
+      \range{pages}{17}
+    \endentry
+    \entry{8_abdel2021lcs}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=1561433e8267a5544202e277f7b1d5dc}{%
+           family={Abdeljaber},
+           familyi={A\bibinitperiod},
+           given={Hikmat\bibnamedelima A},
+           giveni={H\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{1561433e8267a5544202e277f7b1d5dc}
+      \strng{fullhash}{1561433e8267a5544202e277f7b1d5dc}
+      \strng{fullhashraw}{1561433e8267a5544202e277f7b1d5dc}
+      \strng{bibnamehash}{1561433e8267a5544202e277f7b1d5dc}
+      \strng{authorbibnamehash}{1561433e8267a5544202e277f7b1d5dc}
+      \strng{authornamehash}{1561433e8267a5544202e277f7b1d5dc}
+      \strng{authorfullhash}{1561433e8267a5544202e277f7b1d5dc}
+      \strng{authorfullhashraw}{1561433e8267a5544202e277f7b1d5dc}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{Automatic Arabic short answers scoring using longest common subsequence and Arabic WordNet}
+      \field{volume}{9}
+      \field{year}{2021}
+      \field{pages}{76433\bibrangedash 76445}
+      \range{pages}{13}
+    \endentry
+    \entry{4_abdeljaber2021wordnet}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=331f0378364208928165bcd2711c8f60}{%
+           family={Al\bibnamedelima Awaida},
+           familyi={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Saeda\bibnamedelima A},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=11847f2821ac1072feee8f297d4b5ea8}{%
+           family={Al-Shargabi},
+           familyi={A\bibinithyphendelim S\bibinitperiod},
+           given={Bassam},
+           giveni={B\bibinitperiod}}}%
+        {{hash=b592cefd077ee724d808a3d68b6d70be}{%
+           family={Al-Rousan},
+           familyi={A\bibinithyphendelim R\bibinitperiod},
+           given={Thamer},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Scientific Research Support Fund of Jordan Princess Sumaya University for~…}%
+      }
+      \strng{namehash}{ce55c3e15e91e66d7f9d34b4bb307de9}
+      \strng{fullhash}{2fabeaf071eaf989ddee8c950fc601be}
+      \strng{fullhashraw}{2fabeaf071eaf989ddee8c950fc601be}
+      \strng{bibnamehash}{ce55c3e15e91e66d7f9d34b4bb307de9}
+      \strng{authorbibnamehash}{ce55c3e15e91e66d7f9d34b4bb307de9}
+      \strng{authornamehash}{ce55c3e15e91e66d7f9d34b4bb307de9}
+      \strng{authorfullhash}{2fabeaf071eaf989ddee8c950fc601be}
+      \strng{authorfullhashraw}{2fabeaf071eaf989ddee8c950fc601be}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Jordanian Journal of Computers and Information Technology}
+      \field{number}{3}
+      \field{title}{Automated arabic essay grading system based on f-score and arabic worldnet}
+      \field{volume}{5}
+      \field{year}{2019}
+    \endentry
+    \entry{6_ghamdi2014hybridarabic}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=1f715b74461ae232a70da4c1896ca7f3}{%
+           family={Alghamdi},
+           familyi={A\bibinitperiod},
+           given={Mansour},
+           giveni={M\bibinitperiod}}}%
+        {{hash=69c9b923ed676dafb1b84d770bb6afda}{%
+           family={Alkanhal},
+           familyi={A\bibinitperiod},
+           given={Mohamed},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3587eb4b033f1d08c28bcaf5e9152c63}{%
+           family={Elbadrashiny},
+           familyi={E\bibinitperiod},
+           given={Mohamed},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a55aecdaf41fd89f2282d1985e6a2d93}{%
+           family={Al-Qabbany},
+           familyi={A\bibinithyphendelim Q\bibinitperiod},
+           given={Abdulaziz},
+           giveni={A\bibinitperiod}}}%
+        {{hash=cc9f6452902bc95186895874db092c5f}{%
+           family={Areshey},
+           familyi={A\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4e2d6e02469f61b2ae17ade1412d09b0}{%
+           family={Alharbi},
+           familyi={A\bibinitperiod},
+           given={Abdulaziz},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{e401ef20d69cee42bba8745770a210a3}
+      \strng{fullhash}{c7b3e3ebb55137575650fa8e0d69f68c}
+      \strng{fullhashraw}{c7b3e3ebb55137575650fa8e0d69f68c}
+      \strng{bibnamehash}{e401ef20d69cee42bba8745770a210a3}
+      \strng{authorbibnamehash}{e401ef20d69cee42bba8745770a210a3}
+      \strng{authornamehash}{e401ef20d69cee42bba8745770a210a3}
+      \strng{authorfullhash}{c7b3e3ebb55137575650fa8e0d69f68c}
+      \strng{authorfullhashraw}{c7b3e3ebb55137575650fa8e0d69f68c}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{AI Communications}
+      \field{month}{01}
+      \field{title}{A hybrid automatic scoring system for Arabic essays}
+      \field{volume}{27}
+      \field{year}{2014}
+      \field{pages}{103\bibrangedash 111}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.3233/AIC-130586
+      \endverb
+    \endentry
+    \entry{15_alobed2021}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=ddddbc543acee4ab3df6ee4dc439a678}{%
+           family={Alobed},
+           familyi={A\bibinitperiod},
+           given={Mohammad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7d72a6f2c18797a44555c05c35a1c6b0}{%
+           family={Altrad},
+           familyi={A\bibinitperiod},
+           given={Abdallah\bibnamedelima MM},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=894c8d1fb90082af63c2aa9ff936e7a1}{%
+           family={Bakar},
+           familyi={B\bibinitperiod},
+           given={Zainab\bibnamedelimb Binti\bibnamedelima Abu},
+           giveni={Z\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{d10818b84f85b6aa1f2d56d90f2e446f}
+      \strng{fullhash}{c02166c039f35f7a3cb62da3cfdb98f3}
+      \strng{fullhashraw}{c02166c039f35f7a3cb62da3cfdb98f3}
+      \strng{bibnamehash}{d10818b84f85b6aa1f2d56d90f2e446f}
+      \strng{authorbibnamehash}{d10818b84f85b6aa1f2d56d90f2e446f}
+      \strng{authornamehash}{d10818b84f85b6aa1f2d56d90f2e446f}
+      \strng{authorfullhash}{c02166c039f35f7a3cb62da3cfdb98f3}
+      \strng{authorfullhashraw}{c02166c039f35f7a3cb62da3cfdb98f3}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2021 2nd International Conference on Smart Computing and Electronic Enterprise (ICSCEE)}
+      \field{title}{An Adaptive Automated Arabic Essay Scoring Model Using the Semantic of Arabic WordNet}
+      \field{year}{2021}
+      \field{pages}{45\bibrangedash 54}
+      \range{pages}{10}
+    \endentry
+    \entry{18_alqahtani2020svr}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=2dd1b1b7f1b4fad7b0561592e0df1382}{%
+           family={Alqahtani},
+           familyi={A\bibinitperiod},
+           given={Abeer},
+           giveni={A\bibinitperiod}}}%
+        {{hash=aed6ab7ccc42bba2efa8efde2c1e3456}{%
+           family={Al-Saif},
+           familyi={A\bibinithyphendelim S\bibinitperiod},
+           given={Amal},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{23075bf90e312deea12679f95a609f97}
+      \strng{fullhash}{0ed73c6580a6858550bc284e07e2c25e}
+      \strng{fullhashraw}{0ed73c6580a6858550bc284e07e2c25e}
+      \strng{bibnamehash}{23075bf90e312deea12679f95a609f97}
+      \strng{authorbibnamehash}{23075bf90e312deea12679f95a609f97}
+      \strng{authornamehash}{23075bf90e312deea12679f95a609f97}
+      \strng{authorfullhash}{0ed73c6580a6858550bc284e07e2c25e}
+      \strng{authorfullhashraw}{0ed73c6580a6858550bc284e07e2c25e}
+      \field{extraname}{1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 17th International Conference on Natural Language Processing (ICON)}
+      \field{title}{Automated Arabic Essay Evaluation}
+      \field{year}{2020}
+      \field{pages}{181\bibrangedash 190}
+      \range{pages}{10}
+    \endentry
+    \entry{7_qahtani2019rulebased}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=2dd1b1b7f1b4fad7b0561592e0df1382}{%
+           family={Alqahtani},
+           familyi={A\bibinitperiod},
+           given={Abeer},
+           giveni={A\bibinitperiod}}}%
+        {{hash=0a963e7e6795c900a83ea684bd2d073d}{%
+           family={Alsaif},
+           familyi={A\bibinitperiod},
+           given={Amal},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{23075bf90e312deea12679f95a609f97}
+      \strng{fullhash}{ca04264eecfaed0d99a0c8a69fef31e0}
+      \strng{fullhashraw}{ca04264eecfaed0d99a0c8a69fef31e0}
+      \strng{bibnamehash}{23075bf90e312deea12679f95a609f97}
+      \strng{authorbibnamehash}{23075bf90e312deea12679f95a609f97}
+      \strng{authornamehash}{23075bf90e312deea12679f95a609f97}
+      \strng{authorfullhash}{ca04264eecfaed0d99a0c8a69fef31e0}
+      \strng{authorfullhashraw}{ca04264eecfaed0d99a0c8a69fef31e0}
+      \field{extraname}{2}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2019 IEEE international symposium on signal processing and information technology (ISSPIT)}
+      \field{title}{Automatic evaluation for Arabic essays: a rule-based system}
+      \field{year}{2019}
+      \field{pages}{1\bibrangedash 7}
+      \range{pages}{7}
+    \endentry
+    \entry{26_alsanie2022threelevels}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=95af836bbbcede4a9cf417b7a2fcafb4}{%
+           family={Alsanie},
+           familyi={A\bibinitperiod},
+           given={Waleed},
+           giveni={W\bibinitperiod}}}%
+        {{hash=e094ef45d2062c377d427ddee5a1c660}{%
+           family={Alkanhal},
+           familyi={A\bibinitperiod},
+           given={Mohamed\bibnamedelima I},
+           giveni={M\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=7570b9202f468ae4a2ff5e0724c376c8}{%
+           family={Alhamadi},
+           familyi={A\bibinitperiod},
+           given={Mohammed},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2086b93aec639378f1a8447069824de1}{%
+           family={Alqabbany},
+           familyi={A\bibinitperiod},
+           given={Abdulaziz\bibnamedelima O},
+           giveni={A\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{4a53503257741ddfa013bfda8e62bb5e}
+      \strng{fullhash}{bf5a658598d287a9e6849d1a63ade78d}
+      \strng{fullhashraw}{bf5a658598d287a9e6849d1a63ade78d}
+      \strng{bibnamehash}{4a53503257741ddfa013bfda8e62bb5e}
+      \strng{authorbibnamehash}{4a53503257741ddfa013bfda8e62bb5e}
+      \strng{authornamehash}{4a53503257741ddfa013bfda8e62bb5e}
+      \strng{authorfullhash}{bf5a658598d287a9e6849d1a63ade78d}
+      \strng{authorfullhashraw}{bf5a658598d287a9e6849d1a63ade78d}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Progress in Artificial Intelligence}
+      \field{title}{Automatic scoring of arabic essays over three linguistic levels}
+      \field{year}{2022}
+      \field{pages}{1\bibrangedash 13}
+      \range{pages}{13}
+    \endentry
+    \entry{amorim2018aesbias}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=71fb998f581588cd1b7e1df06e943c1f}{%
+           family={Amorim},
+           familyi={A\bibinitperiod},
+           given={Evelin},
+           giveni={E\bibinitperiod}}}%
+        {{hash=99d18c6555d0bacef5f1f6004b730fb4}{%
+           family={Cançado},
+           familyi={C\bibinitperiod},
+           given={Marcia},
+           giveni={M\bibinitperiod}}}%
+        {{hash=889e830561e2b6d53c8650bfb2906c3a}{%
+           family={Veloso},
+           familyi={V\bibinitperiod},
+           given={Adriano},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{fbbcd95ccde2c4896845f5ee9a609547}
+      \strng{fullhash}{9b635b98b8435a8490f34d63acb1ca85}
+      \strng{fullhashraw}{9b635b98b8435a8490f34d63acb1ca85}
+      \strng{bibnamehash}{fbbcd95ccde2c4896845f5ee9a609547}
+      \strng{authorbibnamehash}{fbbcd95ccde2c4896845f5ee9a609547}
+      \strng{authornamehash}{fbbcd95ccde2c4896845f5ee9a609547}
+      \strng{authorfullhash}{9b635b98b8435a8490f34d63acb1ca85}
+      \strng{authorfullhashraw}{9b635b98b8435a8490f34d63acb1ca85}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long Papers)}
+      \field{title}{Automated essay scoring in the presence of biased ratings}
+      \field{year}{2018}
+      \field{pages}{229\bibrangedash 237}
+      \range{pages}{9}
+    \endentry
+    \entry{20_azmi2019aaee}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=d14548d4fa3163a18f096265d37d6458}{%
+           family={Azmi},
+           familyi={A\bibinitperiod},
+           given={Aqil\bibnamedelima M},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=5acd67f5294eb1592ec7baf26012e856}{%
+           family={Al-Jouie},
+           familyi={A\bibinithyphendelim J\bibinitperiod},
+           given={Maram\bibnamedelima F},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=506b587186b760b2f884e19c703f7ffd}{%
+           family={Hussain},
+           familyi={H\bibinitperiod},
+           given={Muhammad},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{d4bddb0e9580a3eebc6654844333850e}
+      \strng{fullhash}{94902adf12f3952dbcf704d1cbd75383}
+      \strng{fullhashraw}{94902adf12f3952dbcf704d1cbd75383}
+      \strng{bibnamehash}{d4bddb0e9580a3eebc6654844333850e}
+      \strng{authorbibnamehash}{d4bddb0e9580a3eebc6654844333850e}
+      \strng{authornamehash}{d4bddb0e9580a3eebc6654844333850e}
+      \strng{authorfullhash}{94902adf12f3952dbcf704d1cbd75383}
+      \strng{authorfullhashraw}{94902adf12f3952dbcf704d1cbd75383}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Information Processing \& Management}
+      \field{number}{5}
+      \field{title}{AAEE--Automated evaluation of students’ essays in Arabic language}
+      \field{volume}{56}
+      \field{year}{2019}
+      \field{pages}{1736\bibrangedash 1752}
+      \range{pages}{17}
+    \endentry
+    \entry{21_bashendy2024qaes}{inproceedings}{}{}
+      \name{author}{8}{}{%
+        {{hash=20cd63245bac575ad870f9c395d7d78d}{%
+           family={Bashendy},
+           familyi={B\bibinitperiod},
+           given={May},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a3d276cec6dd9a30d2c0e3d6980fd1aa}{%
+           family={Albatarni},
+           familyi={A\bibinitperiod},
+           given={Salam},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6ed67ccdbb7cc88a7ad9323fe6c1d93d}{%
+           family={Eltanbouly},
+           familyi={E\bibinitperiod},
+           given={Sohaila},
+           giveni={S\bibinitperiod}}}%
+        {{hash=89e3f2b64fd2cd30bf3836d86921e693}{%
+           family={Zahran},
+           familyi={Z\bibinitperiod},
+           given={Eman},
+           giveni={E\bibinitperiod}}}%
+        {{hash=ad96aef67e0ffd7f02414fa99d346f01}{%
+           family={Elhuseyin},
+           familyi={E\bibinitperiod},
+           given={Hamdo},
+           giveni={H\bibinitperiod}}}%
+        {{hash=b47f131ba4c82dbdff8f2b1c7194f260}{%
+           family={Elsayed},
+           familyi={E\bibinitperiod},
+           given={Tamer},
+           giveni={T\bibinitperiod}}}%
+        {{hash=0d3ec13572c8e958154997edc6f55c38}{%
+           family={Massoud},
+           familyi={M\bibinitperiod},
+           given={Walid},
+           giveni={W\bibinitperiod}}}%
+        {{hash=b46767bc2cc6558bc2276b0d8cda03d7}{%
+           family={Bouamor},
+           familyi={B\bibinitperiod},
+           given={Houda},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{3ce0ced52fac45eaea292da06aba97de}
+      \strng{fullhash}{46145f5d95f6c3a082be77177c8588ff}
+      \strng{fullhashraw}{46145f5d95f6c3a082be77177c8588ff}
+      \strng{bibnamehash}{3ce0ced52fac45eaea292da06aba97de}
+      \strng{authorbibnamehash}{3ce0ced52fac45eaea292da06aba97de}
+      \strng{authornamehash}{3ce0ced52fac45eaea292da06aba97de}
+      \strng{authorfullhash}{46145f5d95f6c3a082be77177c8588ff}
+      \strng{authorfullhashraw}{46145f5d95f6c3a082be77177c8588ff}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of The Second Arabic Natural Language Processing Conference}
+      \field{title}{QAES: First Publicly-Available Trait-Specific Annotations for Automated Scoring of Arabic Essays}
+      \field{year}{2024}
+      \field{pages}{337\bibrangedash 351}
+      \range{pages}{15}
+    \endentry
+    \entry{firoozi2024bert}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=325b0a6fe7d2ae77b7b50e493bfe0215}{%
+           family={Firoozi},
+           familyi={F\bibinitperiod},
+           given={Tahereh},
+           giveni={T\bibinitperiod}}}%
+        {{hash=ae5252d7377f7425604e8188b84abf43}{%
+           family={Gierl},
+           familyi={G\bibinitperiod},
+           given={Mark\bibnamedelima J},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor & Francis}%
+      }
+      \strng{namehash}{e582995d9f8d8274a039ed6ecf4682b5}
+      \strng{fullhash}{1f39406888198bca9e16da85f9eee9d3}
+      \strng{fullhashraw}{1f39406888198bca9e16da85f9eee9d3}
+      \strng{bibnamehash}{e582995d9f8d8274a039ed6ecf4682b5}
+      \strng{authorbibnamehash}{e582995d9f8d8274a039ed6ecf4682b5}
+      \strng{authornamehash}{e582995d9f8d8274a039ed6ecf4682b5}
+      \strng{authorfullhash}{1f39406888198bca9e16da85f9eee9d3}
+      \strng{authorfullhashraw}{1f39406888198bca9e16da85f9eee9d3}
+      \field{extraname}{1}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Routledge International Handbook of Automated Essay Evaluation}
+      \field{title}{WRITTEN IN PERSIAN USING A TRANSFORMER-BASED MODEL}
+      \field{year}{2024}
+    \endentry
+    \entry{9_firoozi2024bert}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=325b0a6fe7d2ae77b7b50e493bfe0215}{%
+           family={Firoozi},
+           familyi={F\bibinitperiod},
+           given={Tahereh},
+           giveni={T\bibinitperiod}}}%
+        {{hash=ae5252d7377f7425604e8188b84abf43}{%
+           family={Gierl},
+           familyi={G\bibinitperiod},
+           given={Mark\bibnamedelima J},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{e582995d9f8d8274a039ed6ecf4682b5}
+      \strng{fullhash}{1f39406888198bca9e16da85f9eee9d3}
+      \strng{fullhashraw}{1f39406888198bca9e16da85f9eee9d3}
+      \strng{bibnamehash}{e582995d9f8d8274a039ed6ecf4682b5}
+      \strng{authorbibnamehash}{e582995d9f8d8274a039ed6ecf4682b5}
+      \strng{authornamehash}{e582995d9f8d8274a039ed6ecf4682b5}
+      \strng{authorfullhash}{1f39406888198bca9e16da85f9eee9d3}
+      \strng{authorfullhashraw}{1f39406888198bca9e16da85f9eee9d3}
+      \field{extraname}{2}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Routledge International Handbook of Automated Essay Evaluation}
+      \field{title}{WRITTEN IN PERSIAN USING A TRANSFORMER-BASED MODEL}
+      \field{year}{2024}
+      \field{pages}{55}
+      \range{pages}{1}
+    \endentry
+    \entry{foltz1999essayassessor}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=90a802e430d8d64683318bec603ca4d5}{%
+           family={Foltz},
+           familyi={F\bibinitperiod},
+           given={Peter\bibnamedelima W},
+           giveni={P\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=2e7715290237ce9f5b8bfbefb0bebbb6}{%
+           family={Laham},
+           familyi={L\bibinitperiod},
+           given={Darrell},
+           giveni={D\bibinitperiod}}}%
+        {{hash=f5e0d418f5c3737f54ae9933b0cfc7fe}{%
+           family={Landauer},
+           familyi={L\bibinitperiod},
+           given={Thomas\bibnamedelima K},
+           giveni={T\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{59451d3ea6fe135a3ef90390878ae12e}
+      \strng{fullhash}{287a2f7ad10eb06e8fa4545e28f809f9}
+      \strng{fullhashraw}{287a2f7ad10eb06e8fa4545e28f809f9}
+      \strng{bibnamehash}{59451d3ea6fe135a3ef90390878ae12e}
+      \strng{authorbibnamehash}{59451d3ea6fe135a3ef90390878ae12e}
+      \strng{authornamehash}{59451d3ea6fe135a3ef90390878ae12e}
+      \strng{authorfullhash}{287a2f7ad10eb06e8fa4545e28f809f9}
+      \strng{authorfullhashraw}{287a2f7ad10eb06e8fa4545e28f809f9}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Interactive Multimedia Electronic Journal of Computer-Enhanced Learning}
+      \field{number}{2}
+      \field{title}{The intelligent essay assessor: Applications to educational technology}
+      \field{volume}{1}
+      \field{year}{1999}
+      \field{pages}{939\bibrangedash 944}
+      \range{pages}{6}
+    \endentry
+    \entry{27_gaheen2021jaya}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=7689d0fc505e49f0c83eebc1719c420d}{%
+           family={Gaheen},
+           familyi={G\bibinitperiod},
+           given={Marwa\bibnamedelima M},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=d65be73f73b9ffed0b10090cc853d837}{%
+           family={ElEraky},
+           familyi={E\bibinitperiod},
+           given={Rania\bibnamedelima M},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=b2ce3b3a19832fcca01ba147665f9fbd}{%
+           family={Ewees},
+           familyi={E\bibinitperiod},
+           given={Ahmed\bibnamedelima A},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{0cc55ad1ddb008cfc023b0393c6e0e84}
+      \strng{fullhash}{11c9e5432e4d0ce241f7f4e7b8e63ab3}
+      \strng{fullhashraw}{11c9e5432e4d0ce241f7f4e7b8e63ab3}
+      \strng{bibnamehash}{0cc55ad1ddb008cfc023b0393c6e0e84}
+      \strng{authorbibnamehash}{0cc55ad1ddb008cfc023b0393c6e0e84}
+      \strng{authornamehash}{0cc55ad1ddb008cfc023b0393c6e0e84}
+      \strng{authorfullhash}{11c9e5432e4d0ce241f7f4e7b8e63ab3}
+      \strng{authorfullhashraw}{11c9e5432e4d0ce241f7f4e7b8e63ab3}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Education and Information Technologies}
+      \field{title}{Automated students arabic essay scoring using trained neural network by e-jaya optimization to support personalized system of instruction}
+      \field{volume}{26}
+      \field{year}{2021}
+      \field{pages}{1165\bibrangedash 1181}
+      \range{pages}{17}
+    \endentry
+    \entry{23_ghazawi2024bert}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=2fd630b917ca37fb3de69c7d55852ec7}{%
+           family={Ghazawi},
+           familyi={G\bibinitperiod},
+           given={Rayed},
+           giveni={R\bibinitperiod}}}%
+        {{hash=9009c5ad711bc358a4b5135d91c849a8}{%
+           family={Simpson},
+           familyi={S\bibinitperiod},
+           given={Edwin},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{148b4d2b300c854d4d883db838bca51a}
+      \strng{fullhash}{e4f64e0593a4c23e9dd58262e426ca37}
+      \strng{fullhashraw}{e4f64e0593a4c23e9dd58262e426ca37}
+      \strng{bibnamehash}{148b4d2b300c854d4d883db838bca51a}
+      \strng{authorbibnamehash}{148b4d2b300c854d4d883db838bca51a}
+      \strng{authornamehash}{148b4d2b300c854d4d883db838bca51a}
+      \strng{authorfullhash}{e4f64e0593a4c23e9dd58262e426ca37}
+      \strng{authorfullhashraw}{e4f64e0593a4c23e9dd58262e426ca37}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2407.11212}
+      \field{title}{Automated essay scoring in Arabic: a dataset and analysis of a BERT-based system}
+      \field{year}{2024}
+    \endentry
+    \entry{1_gomaa2014arabic}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=f67f61dc526d7fe881c6d956814808ec}{%
+           family={Gomaa},
+           familyi={G\bibinitperiod},
+           given={Wael\bibnamedelima Hassan},
+           giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=e6882226f67b41ecd652e6ccd52b7a47}{%
+           family={Fahmy},
+           familyi={F\bibinitperiod},
+           given={Aly\bibnamedelima Aly},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{f41dfe2b99ab43fe2b5d9e7102a6e78c}
+      \strng{fullhash}{59b1f95b577f443ba377f0a124e2d537}
+      \strng{fullhashraw}{59b1f95b577f443ba377f0a124e2d537}
+      \strng{bibnamehash}{f41dfe2b99ab43fe2b5d9e7102a6e78c}
+      \strng{authorbibnamehash}{f41dfe2b99ab43fe2b5d9e7102a6e78c}
+      \strng{authornamehash}{f41dfe2b99ab43fe2b5d9e7102a6e78c}
+      \strng{authorfullhash}{59b1f95b577f443ba377f0a124e2d537}
+      \strng{authorfullhashraw}{59b1f95b577f443ba377f0a124e2d537}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computer Speech \& Language}
+      \field{number}{4}
+      \field{title}{Automatic scoring for answers to Arabic test questions}
+      \field{volume}{28}
+      \field{year}{2014}
+      \field{pages}{833\bibrangedash 857}
+      \range{pages}{25}
+    \endentry
+    \entry{habash2022zaebuc}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=171513a3f8ad448c09b164774fc78198}{%
+           family={Habash},
+           familyi={H\bibinitperiod},
+           given={Nizar},
+           giveni={N\bibinitperiod}}}%
+        {{hash=7a150edcba256355a0f770b4f4c317bb}{%
+           family={Palfreyman},
+           familyi={P\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{700835fabd0435ed5ab162d0de2259fb}
+      \strng{fullhash}{0e462cb2a7e8d98b9650b5eecbb80130}
+      \strng{fullhashraw}{0e462cb2a7e8d98b9650b5eecbb80130}
+      \strng{bibnamehash}{700835fabd0435ed5ab162d0de2259fb}
+      \strng{authorbibnamehash}{700835fabd0435ed5ab162d0de2259fb}
+      \strng{authornamehash}{700835fabd0435ed5ab162d0de2259fb}
+      \strng{authorfullhash}{0e462cb2a7e8d98b9650b5eecbb80130}
+      \strng{authorfullhashraw}{0e462cb2a7e8d98b9650b5eecbb80130}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Thirteenth Language Resources and Evaluation Conference}
+      \field{title}{ZAEBUC: An annotated Arabic-English bilingual writer corpus}
+      \field{year}{2022}
+      \field{pages}{79\bibrangedash 88}
+      \range{pages}{10}
+    \endentry
+    \entry{24_islam2013abess}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=51b560e67e90c93582cc97e281691384}{%
+           family={Islam},
+           familyi={I\bibinitperiod},
+           given={Md\bibnamedelima Monjurul},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=e30dded93fd412dad0eae7e7d37c7f07}{%
+           family={Hoque},
+           familyi={H\bibinitperiod},
+           given={ASM\bibnamedelima Latiful},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{7025be47f5a6167e612afe3024dfc17d}
+      \strng{fullhash}{39b280ca6f4233b7b8df38adc183dbf6}
+      \strng{fullhashraw}{39b280ca6f4233b7b8df38adc183dbf6}
+      \strng{bibnamehash}{7025be47f5a6167e612afe3024dfc17d}
+      \strng{authorbibnamehash}{7025be47f5a6167e612afe3024dfc17d}
+      \strng{authornamehash}{7025be47f5a6167e612afe3024dfc17d}
+      \strng{authorfullhash}{39b280ca6f4233b7b8df38adc183dbf6}
+      \strng{authorfullhashraw}{39b280ca6f4233b7b8df38adc183dbf6}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2013 International Conference on Informatics, Electronics and Vision (ICIEV)}
+      \field{title}{Automated Bangla essay scoring system: ABESS}
+      \field{year}{2013}
+      \field{pages}{1\bibrangedash 5}
+      \range{pages}{5}
+    \endentry
+    \entry{5_aljouie2017schoolchildren}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=5acd67f5294eb1592ec7baf26012e856}{%
+           family={Al-Jouie},
+           familyi={A\bibinithyphendelim J\bibinitperiod},
+           given={Maram\bibnamedelima F},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=d14548d4fa3163a18f096265d37d6458}{%
+           family={Azmi},
+           familyi={A\bibinitperiod},
+           given={Aqil\bibnamedelima M},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{ca06fc469af1f982643e443a5b5deaf7}
+      \strng{fullhash}{1afb0ff5764fc1c678e586bda0265958}
+      \strng{fullhashraw}{1afb0ff5764fc1c678e586bda0265958}
+      \strng{bibnamehash}{ca06fc469af1f982643e443a5b5deaf7}
+      \strng{authorbibnamehash}{ca06fc469af1f982643e443a5b5deaf7}
+      \strng{authornamehash}{ca06fc469af1f982643e443a5b5deaf7}
+      \strng{authorfullhash}{1afb0ff5764fc1c678e586bda0265958}
+      \strng{authorfullhashraw}{1afb0ff5764fc1c678e586bda0265958}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Procedia Computer Science}
+      \field{title}{Automated evaluation of school children essays in Arabic}
+      \field{volume}{117}
+      \field{year}{2017}
+      \field{pages}{19\bibrangedash 22}
+      \range{pages}{4}
+    \endentry
+    \entry{litreviewarabic}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=4d28f6098a8fd13dc8af9f7d0d5175b8}{%
+           family={Machhout},
+           familyi={M\bibinitperiod},
+           given={Rim\bibnamedelima Aroua},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=4eccabd66eee32537e9ece2a751d4a26}{%
+           family={Zribi},
+           familyi={Z\bibinitperiod},
+           given={Chiraz\bibnamedelimb Ben\bibnamedelima Othmane},
+           giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=b66159b7a3a3e0a8fb269441228e0d23}{%
+           family={Bouzid},
+           familyi={B\bibinitperiod},
+           given={Saoussen\bibnamedelima Mathlouthi},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{20b2c76bf54d18f2c1224cd7f216689b}
+      \strng{fullhash}{3e439b343f6315be18d0229be4ea98ac}
+      \strng{fullhashraw}{3e439b343f6315be18d0229be4ea98ac}
+      \strng{bibnamehash}{20b2c76bf54d18f2c1224cd7f216689b}
+      \strng{authorbibnamehash}{20b2c76bf54d18f2c1224cd7f216689b}
+      \strng{authornamehash}{20b2c76bf54d18f2c1224cd7f216689b}
+      \strng{authorfullhash}{3e439b343f6315be18d0229be4ea98ac}
+      \strng{authorfullhashraw}{3e439b343f6315be18d0229be4ea98ac}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Conference on Intelligent Systems Design and Applications}
+      \field{title}{Arabic Automatic Essay Scoring Systems: An Overview Study}
+      \field{year}{2021}
+      \field{pages}{1164\bibrangedash 1176}
+      \range{pages}{13}
+    \endentry
+    \entry{malouff2016bias}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=a45703ea3037ce08ef286f1ec9969f15}{%
+           family={Malouff},
+           familyi={M\bibinitperiod},
+           given={John\bibnamedelima M},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=d9f1b4b200454367c800f183246918d0}{%
+           family={Thorsteinsson},
+           familyi={T\bibinitperiod},
+           given={Einar\bibnamedelima B},
+           giveni={E\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {SAGE Publications Sage UK: London, England}%
+      }
+      \strng{namehash}{74ef2e8b064e93898bbba96e3e6499f7}
+      \strng{fullhash}{49bfc6c689b0fe842b426a2ea6304d48}
+      \strng{fullhashraw}{49bfc6c689b0fe842b426a2ea6304d48}
+      \strng{bibnamehash}{74ef2e8b064e93898bbba96e3e6499f7}
+      \strng{authorbibnamehash}{74ef2e8b064e93898bbba96e3e6499f7}
+      \strng{authornamehash}{74ef2e8b064e93898bbba96e3e6499f7}
+      \strng{authorfullhash}{49bfc6c689b0fe842b426a2ea6304d48}
+      \strng{authorfullhashraw}{49bfc6c689b0fe842b426a2ea6304d48}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Australian Journal of Education}
+      \field{number}{3}
+      \field{title}{Bias in grading: A meta-analysis of experimental research findings}
+      \field{volume}{60}
+      \field{year}{2016}
+      \field{pages}{245\bibrangedash 256}
+      \range{pages}{12}
+    \endentry
+    \entry{22_meccawy2023mining}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=50ba1fad6b3a2b643cf5e3e4d125bc62}{%
+           family={Meccawy},
+           familyi={M\bibinitperiod},
+           given={Maram},
+           giveni={M\bibinitperiod}}}%
+        {{hash=37facfcc119ef75934cb34121d78bcab}{%
+           family={Bayazed},
+           familyi={B\bibinitperiod},
+           given={Afnan\bibnamedelima Ali},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=71aa4a420f286e800484076326b69441}{%
+           family={Al-Abdullah},
+           familyi={A\bibinithyphendelim A\bibinitperiod},
+           given={Bashayer},
+           giveni={B\bibinitperiod}}}%
+        {{hash=f4de8428f0e288a5129a4366811000c1}{%
+           family={Algamdi},
+           familyi={A\bibinitperiod},
+           given={Hind},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Science}%
+        {Information (SAI) Organization Limited}%
+      }
+      \strng{namehash}{f073d33357b7bd16ae01382e19f76747}
+      \strng{fullhash}{00ec448cc69f01e04fce9fb0001a9a41}
+      \strng{fullhashraw}{00ec448cc69f01e04fce9fb0001a9a41}
+      \strng{bibnamehash}{f073d33357b7bd16ae01382e19f76747}
+      \strng{authorbibnamehash}{f073d33357b7bd16ae01382e19f76747}
+      \strng{authornamehash}{f073d33357b7bd16ae01382e19f76747}
+      \strng{authorfullhash}{00ec448cc69f01e04fce9fb0001a9a41}
+      \strng{authorfullhashraw}{00ec448cc69f01e04fce9fb0001a9a41}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Advanced Computer Science and Applications}
+      \field{number}{6}
+      \field{title}{Automatic Essay Scoring for Arabic Short Answer Questions using Text Mining Techniques}
+      \field{volume}{14}
+      \field{year}{2023}
+    \endentry
+    \entry{nael2022arascore}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=d99e7815e288a30680d785b91be298a7}{%
+           family={Nael},
+           familyi={N\bibinitperiod},
+           given={Omar},
+           giveni={O\bibinitperiod}}}%
+        {{hash=e12528093738bdd19f53e7de82427ad8}{%
+           family={ELmanyalawy},
+           familyi={E\bibinitperiod},
+           given={Youssef},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=df6aa527d1114c5acd84deac59d7e757}{%
+           family={Sharaf},
+           familyi={S\bibinitperiod},
+           given={Nada},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{916012b6f61984b6505f0ac9c817c1c9}
+      \strng{fullhash}{f5411e67c421e382c6a4ebc5ced4df6c}
+      \strng{fullhashraw}{f5411e67c421e382c6a4ebc5ced4df6c}
+      \strng{bibnamehash}{916012b6f61984b6505f0ac9c817c1c9}
+      \strng{authorbibnamehash}{916012b6f61984b6505f0ac9c817c1c9}
+      \strng{authornamehash}{916012b6f61984b6505f0ac9c817c1c9}
+      \strng{authorfullhash}{f5411e67c421e382c6a4ebc5ced4df6c}
+      \strng{authorfullhashraw}{f5411e67c421e382c6a4ebc5ced4df6c}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Array}
+      \field{title}{AraScore: A deep learning-based system for Arabic short answer scoring}
+      \field{volume}{13}
+      \field{year}{2022}
+      \field{pages}{100109}
+      \range{pages}{1}
+    \endentry
+    \entry{ouahrani2020ar-asag}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=5d0d2a7592375d2059afb4cdf6d302bd}{%
+           family={Ouahrani},
+           familyi={O\bibinitperiod},
+           given={Leila},
+           giveni={L\bibinitperiod}}}%
+        {{hash=111184261a9a9a5d1a67cef82f31d232}{%
+           family={Bennouar},
+           familyi={B\bibinitperiod},
+           given={Djamal},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{2b0d584e147cdfdbf5f51167123a65ba}
+      \strng{fullhash}{354cde2a24473cee86eb10f8d87fed60}
+      \strng{fullhashraw}{354cde2a24473cee86eb10f8d87fed60}
+      \strng{bibnamehash}{2b0d584e147cdfdbf5f51167123a65ba}
+      \strng{authorbibnamehash}{2b0d584e147cdfdbf5f51167123a65ba}
+      \strng{authornamehash}{2b0d584e147cdfdbf5f51167123a65ba}
+      \strng{authorfullhash}{354cde2a24473cee86eb10f8d87fed60}
+      \strng{authorfullhashraw}{354cde2a24473cee86eb10f8d87fed60}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Twelfth Language Resources and Evaluation Conference}
+      \field{title}{AR-ASAG an Arabic dataset for automatic short answer grading evaluation}
+      \field{year}{2020}
+      \field{pages}{2634\bibrangedash 2643}
+      \range{pages}{10}
+    \endentry
+    \entry{page2003peg}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=1b9f91e23d364d362d8547a5c812ee97}{%
+           family={Page},
+           familyi={P\bibinitperiod},
+           given={Ellis\bibnamedelima Batten},
+           giveni={E\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Lawrence Erlbaum Associates Publishers}%
+      }
+      \strng{namehash}{1b9f91e23d364d362d8547a5c812ee97}
+      \strng{fullhash}{1b9f91e23d364d362d8547a5c812ee97}
+      \strng{fullhashraw}{1b9f91e23d364d362d8547a5c812ee97}
+      \strng{bibnamehash}{1b9f91e23d364d362d8547a5c812ee97}
+      \strng{authorbibnamehash}{1b9f91e23d364d362d8547a5c812ee97}
+      \strng{authornamehash}{1b9f91e23d364d362d8547a5c812ee97}
+      \strng{authorfullhash}{1b9f91e23d364d362d8547a5c812ee97}
+      \strng{authorfullhashraw}{1b9f91e23d364d362d8547a5c812ee97}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Project Essay Grade: PEG.}
+      \field{year}{2003}
+    \endentry
+    \entry{pasha2014madamira}{inproceedings}{}{}
+      \name{author}{9}{}{%
+        {{hash=afddf91380f9b0066dc80476f24846bf}{%
+           family={Pasha},
+           familyi={P\bibinitperiod},
+           given={Arfath},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b3351753ec38762a37c9322d19d5a1f4}{%
+           family={Al-Badrashiny},
+           familyi={A\bibinithyphendelim B\bibinitperiod},
+           given={Mohamed},
+           giveni={M\bibinitperiod}}}%
+        {{hash=bcf514887c063254cdf2bb30b3f7944b}{%
+           family={Diab},
+           familyi={D\bibinitperiod},
+           given={Mona\bibnamedelima T},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=338ab41a9b8761a141edf3fc0adfcb1e}{%
+           family={El\bibnamedelima Kholy},
+           familyi={E\bibinitperiod\bibinitdelim K\bibinitperiod},
+           given={Ahmed},
+           giveni={A\bibinitperiod}}}%
+        {{hash=251ec55d39c217139e5b38d79458ebce}{%
+           family={Eskander},
+           familyi={E\bibinitperiod},
+           given={Ramy},
+           giveni={R\bibinitperiod}}}%
+        {{hash=171513a3f8ad448c09b164774fc78198}{%
+           family={Habash},
+           familyi={H\bibinitperiod},
+           given={Nizar},
+           giveni={N\bibinitperiod}}}%
+        {{hash=fc839d30d40e109721affd0ea044e6e6}{%
+           family={Pooleery},
+           familyi={P\bibinitperiod},
+           given={Manoj},
+           giveni={M\bibinitperiod}}}%
+        {{hash=50e8b13f09de6a4c5cb0f209843877e4}{%
+           family={Rambow},
+           familyi={R\bibinitperiod},
+           given={Owen},
+           giveni={O\bibinitperiod}}}%
+        {{hash=61bd4c3fdc69a4f1ad82de00bd885c63}{%
+           family={Roth},
+           familyi={R\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{e963a1f79a41eee0e2c1e0fd6cdd6b52}
+      \strng{fullhash}{6bb47b15494edd80d8e4765d98fc964c}
+      \strng{fullhashraw}{6bb47b15494edd80d8e4765d98fc964c}
+      \strng{bibnamehash}{e963a1f79a41eee0e2c1e0fd6cdd6b52}
+      \strng{authorbibnamehash}{e963a1f79a41eee0e2c1e0fd6cdd6b52}
+      \strng{authornamehash}{e963a1f79a41eee0e2c1e0fd6cdd6b52}
+      \strng{authorfullhash}{6bb47b15494edd80d8e4765d98fc964c}
+      \strng{authorfullhashraw}{6bb47b15494edd80d8e4765d98fc964c}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Lrec}
+      \field{number}{2014}
+      \field{title}{Madamira: A fast, comprehensive tool for morphological analysis and disambiguation of arabic.}
+      \field{volume}{14}
+      \field{year}{2014}
+      \field{pages}{1094\bibrangedash 1101}
+      \range{pages}{8}
+    \endentry
+    \entry{16_rababah2017short}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=10d83eb7dda4112dbd74f95d3e4125fc}{%
+           family={Rababah},
+           familyi={R\bibinitperiod},
+           given={Hebah},
+           giveni={H\bibinitperiod}}}%
+        {{hash=731774ed61af55bead6f6596d2c96dde}{%
+           family={Al-Taani},
+           familyi={A\bibinithyphendelim T\bibinitperiod},
+           given={Ahmad\bibnamedelima T},
+           giveni={A\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{fc08620da5d0657b613897e795ad291e}
+      \strng{fullhash}{21206f231c4e9e5e4d44324402c0a4b7}
+      \strng{fullhashraw}{21206f231c4e9e5e4d44324402c0a4b7}
+      \strng{bibnamehash}{fc08620da5d0657b613897e795ad291e}
+      \strng{authorbibnamehash}{fc08620da5d0657b613897e795ad291e}
+      \strng{authornamehash}{fc08620da5d0657b613897e795ad291e}
+      \strng{authorfullhash}{21206f231c4e9e5e4d44324402c0a4b7}
+      \strng{authorfullhashraw}{21206f231c4e9e5e4d44324402c0a4b7}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2017 8th International Conference on Information Technology (ICIT)}
+      \field{title}{An automated scoring approach for Arabic short answers essay questions}
+      \field{year}{2017}
+      \field{pages}{697\bibrangedash 702}
+      \range{pages}{6}
+    \endentry
+    \entry{ramesh2022review}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=6db52681347cf0effdf7775f8dc87af8}{%
+           family={Ramesh},
+           familyi={R\bibinitperiod},
+           given={Dadi},
+           giveni={D\bibinitperiod}}}%
+        {{hash=688b5ec222a9c45c339bf2b3fd3f2d78}{%
+           family={Sanampudi},
+           familyi={S\bibinitperiod},
+           given={Suresh\bibnamedelima Kumar},
+           giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{c00e1b894ebd395303801a7903f078e3}
+      \strng{fullhash}{3203c458d7e0c67499eb6292b6e9d29e}
+      \strng{fullhashraw}{3203c458d7e0c67499eb6292b6e9d29e}
+      \strng{bibnamehash}{c00e1b894ebd395303801a7903f078e3}
+      \strng{authorbibnamehash}{c00e1b894ebd395303801a7903f078e3}
+      \strng{authornamehash}{c00e1b894ebd395303801a7903f078e3}
+      \strng{authorfullhash}{3203c458d7e0c67499eb6292b6e9d29e}
+      \strng{authorfullhashraw}{3203c458d7e0c67499eb6292b6e9d29e}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Artificial Intelligence Review}
+      \field{number}{3}
+      \field{title}{An automated essay scoring systems: a systematic literature review}
+      \field{volume}{55}
+      \field{year}{2022}
+      \field{pages}{2495\bibrangedash 2527}
+      \range{pages}{33}
+    \endentry
+    \entry{rudner2006intellimetric}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=fee5f9cc6e821c3556c4f5005a52e4ab}{%
+           family={Rudner},
+           familyi={R\bibinitperiod},
+           given={Lawrence\bibnamedelima M},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=130f9c22b7e38440efa21710d0e9c157}{%
+           family={Garcia},
+           familyi={G\bibinitperiod},
+           given={Veronica},
+           giveni={V\bibinitperiod}}}%
+        {{hash=a022dc43e2ead1b95b9276ef6409b5ef}{%
+           family={Welch},
+           familyi={W\bibinitperiod},
+           given={Catherine},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{b09a04e7a7ed709b61f1c3e676052b7e}
+      \strng{fullhash}{9793ede4b4d817ee8584ed214cdf0aa0}
+      \strng{fullhashraw}{9793ede4b4d817ee8584ed214cdf0aa0}
+      \strng{bibnamehash}{b09a04e7a7ed709b61f1c3e676052b7e}
+      \strng{authorbibnamehash}{b09a04e7a7ed709b61f1c3e676052b7e}
+      \strng{authornamehash}{b09a04e7a7ed709b61f1c3e676052b7e}
+      \strng{authorfullhash}{9793ede4b4d817ee8584ed214cdf0aa0}
+      \strng{authorfullhashraw}{9793ede4b4d817ee8584ed214cdf0aa0}
+      \field{extraname}{1}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Technology, Learning and Assessment}
+      \field{number}{4}
+      \field{title}{An evaluation of IntelliMetric™ essay scoring system}
+      \field{volume}{4}
+      \field{year}{2006}
+    \endentry
+    \entry{rudner2002bayes}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=fee5f9cc6e821c3556c4f5005a52e4ab}{%
+           family={Rudner},
+           familyi={R\bibinitperiod},
+           given={Lawrence\bibnamedelima M},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=8c85fb3fdf16cde7d267c51a9e0c88fe}{%
+           family={Liang},
+           familyi={L\bibinitperiod},
+           given={Tahung},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{b09a04e7a7ed709b61f1c3e676052b7e}
+      \strng{fullhash}{03a57cfeaaa86105fa87ba4cb24fc3dd}
+      \strng{fullhashraw}{03a57cfeaaa86105fa87ba4cb24fc3dd}
+      \strng{bibnamehash}{b09a04e7a7ed709b61f1c3e676052b7e}
+      \strng{authorbibnamehash}{b09a04e7a7ed709b61f1c3e676052b7e}
+      \strng{authornamehash}{b09a04e7a7ed709b61f1c3e676052b7e}
+      \strng{authorfullhash}{03a57cfeaaa86105fa87ba4cb24fc3dd}
+      \strng{authorfullhashraw}{03a57cfeaaa86105fa87ba4cb24fc3dd}
+      \field{extraname}{2}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Technology, Learning and Assessment}
+      \field{number}{2}
+      \field{title}{Automated essay scoring using Bayes' theorem}
+      \field{volume}{1}
+      \field{year}{2002}
+    \endentry
+    \entry{2_shalabi2016levenshtein}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=aadd33b1884182f0a1288c8119ad0a86}{%
+           family={Al-shalabi},
+           familyi={A\bibinithyphendelim s\bibinitperiod},
+           given={Emad},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{aadd33b1884182f0a1288c8119ad0a86}
+      \strng{fullhash}{aadd33b1884182f0a1288c8119ad0a86}
+      \strng{fullhashraw}{aadd33b1884182f0a1288c8119ad0a86}
+      \strng{bibnamehash}{aadd33b1884182f0a1288c8119ad0a86}
+      \strng{authorbibnamehash}{aadd33b1884182f0a1288c8119ad0a86}
+      \strng{authornamehash}{aadd33b1884182f0a1288c8119ad0a86}
+      \strng{authorfullhash}{aadd33b1884182f0a1288c8119ad0a86}
+      \strng{authorfullhashraw}{aadd33b1884182f0a1288c8119ad0a86}
+      \field{sortinit}{s}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ijcsi International Journal of Computer Science Issues}
+      \field{month}{10}
+      \field{title}{An Automated System for Essay Scoring of Online Exams in Arabic based on Stemming Techniques and Levenshtein Edit Operations}
+      \field{volume}{13}
+      \field{year}{2016}
+      \field{pages}{45\bibrangedash 50}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.48550/arXiv.1611.02815
+      \endverb
+    \endentry
+    \entry{3_shehab2018arabicsimiliarity}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=0ea5158e3075453aca9836c59ae35663}{%
+           family={Shehab},
+           familyi={S\bibinitperiod},
+           given={Abdulaziz},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7aa6d635008de8abe09396a7e0b0acc3}{%
+           family={Faroun},
+           familyi={F\bibinitperiod},
+           given={Mahmoud},
+           giveni={M\bibinitperiod}}}%
+        {{hash=29f42d4c4d58f8a6113fd7e48ab28f1b}{%
+           family={Rashad},
+           familyi={R\bibinitperiod},
+           given={Magdi},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Science}%
+        {Information (SAI) Organization Limited}%
+      }
+      \strng{namehash}{7775ba77ea6f27963588e176a02432c6}
+      \strng{fullhash}{4e6706828e788b2ab0cebc4586421427}
+      \strng{fullhashraw}{4e6706828e788b2ab0cebc4586421427}
+      \strng{bibnamehash}{7775ba77ea6f27963588e176a02432c6}
+      \strng{authorbibnamehash}{7775ba77ea6f27963588e176a02432c6}
+      \strng{authornamehash}{7775ba77ea6f27963588e176a02432c6}
+      \strng{authorfullhash}{4e6706828e788b2ab0cebc4586421427}
+      \strng{authorfullhashraw}{4e6706828e788b2ab0cebc4586421427}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Advanced Computer Science and Applications}
+      \field{number}{3}
+      \field{title}{An automatic Arabic essay grading system based on text similarity Algorithms}
+      \field{volume}{9}
+      \field{year}{2018}
+    \endentry
+    \entry{10_singh2023hindi}{inproceedings}{}{}
+      \name{author}{10}{}{%
+        {{hash=ff480f26c45eb9823fd6d161e12abc06}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Shubhankar},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5f77222a40cf9c0cb15e4586731108da}{%
+           family={Pupneja},
+           familyi={P\bibinitperiod},
+           given={Anirudh},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e4485e492c1b94fa740d9f6eee4f1be1}{%
+           family={Mital},
+           familyi={M\bibinitperiod},
+           given={Shivaansh},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d54535f85029ed8f7e9776c2a6fe199f}{%
+           family={Shah},
+           familyi={S\bibinitperiod},
+           given={Cheril},
+           giveni={C\bibinitperiod}}}%
+        {{hash=92758e68ca2f78b69e3dd7ac42902f78}{%
+           family={Bawkar},
+           familyi={B\bibinitperiod},
+           given={Manish},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0e66fec21abe84a0ece2d26bd6a63b59}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={Lakshman\bibnamedelima Prasad},
+           giveni={L\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=801929878366e708000bc395ebf9e151}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Ajit},
+           giveni={A\bibinitperiod}}}%
+        {{hash=cb4c84053d844ebf3308a100d8cea482}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Yaman},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=d26d6368c3fac3faa994b7738acd2bcc}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={Rushali},
+           giveni={R\bibinitperiod}}}%
+        {{hash=679fb4545b45980206977c294e19634b}{%
+           family={Shah},
+           familyi={S\bibinitperiod},
+           given={Rajiv\bibnamedelima Ratn},
+           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{c443309773c999746a242f2470c7dbc6}
+      \strng{fullhash}{c9358f286457b67b8b148fa977a9d678}
+      \strng{fullhashraw}{c9358f286457b67b8b148fa977a9d678}
+      \strng{bibnamehash}{c443309773c999746a242f2470c7dbc6}
+      \strng{authorbibnamehash}{c443309773c999746a242f2470c7dbc6}
+      \strng{authornamehash}{c443309773c999746a242f2470c7dbc6}
+      \strng{authorfullhash}{c9358f286457b67b8b148fa977a9d678}
+      \strng{authorfullhashraw}{c9358f286457b67b8b148fa977a9d678}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the AAAI Conference on Artificial Intelligence}
+      \field{number}{13}
+      \field{title}{H-AES: towards automated essay scoring for hindi}
+      \field{volume}{37}
+      \field{year}{2023}
+      \field{pages}{15955\bibrangedash 15963}
+      \range{pages}{9}
+    \endentry
+    \entry{sinha2012new}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=884816f101f68dfcc1c8848ddb24479c}{%
+           family={Sinha},
+           familyi={S\bibinitperiod},
+           given={Manjira},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3dc38f2f1f9ba871c9a07a023e9c9200}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Sakshi},
+           giveni={S\bibinitperiod}}}%
+        {{hash=db66d495c6f448eb1a069f1fe99b5b75}{%
+           family={Dasgupta},
+           familyi={D\bibinitperiod},
+           given={Tirthankar},
+           giveni={T\bibinitperiod}}}%
+        {{hash=1aacb4398d4cb534d0db3559f3358265}{%
+           family={Basu},
+           familyi={B\bibinitperiod},
+           given={Anupam},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{e598a5080bdacbc350c3d55afd83ca5d}
+      \strng{fullhash}{78e4416930dfa60a90054b068c0881eb}
+      \strng{fullhashraw}{78e4416930dfa60a90054b068c0881eb}
+      \strng{bibnamehash}{e598a5080bdacbc350c3d55afd83ca5d}
+      \strng{authorbibnamehash}{e598a5080bdacbc350c3d55afd83ca5d}
+      \strng{authornamehash}{e598a5080bdacbc350c3d55afd83ca5d}
+      \strng{authorfullhash}{78e4416930dfa60a90054b068c0881eb}
+      \strng{authorfullhashraw}{78e4416930dfa60a90054b068c0881eb}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of COLING 2012: Posters}
+      \field{title}{New readability measures for Bangla and Hindi texts}
+      \field{year}{2012}
+      \field{pages}{1141\bibrangedash 1150}
+      \range{pages}{10}
+    \endentry
+    \entry{susanto2023deberta}{incollection}{}{}
+      \name{author}{3}{}{%
+        {{hash=1bd985460408801a7e06eba7e190d942}{%
+           family={Susanto},
+           familyi={S\bibinitperiod},
+           given={Hansel},
+           giveni={H\bibinitperiod}}}%
+        {{hash=af507e64d8e3d1b55787f9efac24937d}{%
+           family={Gunawan},
+           familyi={G\bibinitperiod},
+           given={Alexander\bibnamedelimb Agung\bibnamedelima Santoso},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=7a5ebf9ad6ea15f011e7a16940be3974}{%
+           family={Hasani},
+           familyi={H\bibinitperiod},
+           given={Muhammad\bibnamedelima Fikri},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{05e747987a95af1b939b4c769cf54d0a}
+      \strng{fullhash}{d7edb09f3fffd8f74687725937f42eb3}
+      \strng{fullhashraw}{d7edb09f3fffd8f74687725937f42eb3}
+      \strng{bibnamehash}{05e747987a95af1b939b4c769cf54d0a}
+      \strng{authorbibnamehash}{05e747987a95af1b939b4c769cf54d0a}
+      \strng{authornamehash}{05e747987a95af1b939b4c769cf54d0a}
+      \strng{authorfullhash}{d7edb09f3fffd8f74687725937f42eb3}
+      \strng{authorfullhashraw}{d7edb09f3fffd8f74687725937f42eb3}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Computational Methods in Systems and Software}
+      \field{title}{Development of Automated Essay Scoring System Using DeBERTa as a Transformer-Based Language Model}
+      \field{year}{2023}
+      \field{pages}{202\bibrangedash 215}
+      \range{pages}{14}
+    \endentry
+    \entry{tay2018skipflow}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=7579658a0aca8cb0e17a89deb28b8ccc}{%
+           family={Tay},
+           familyi={T\bibinitperiod},
+           given={Yi},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=772a83d101f43f05728d4e7d4bf28a93}{%
+           family={Phan},
+           familyi={P\bibinitperiod},
+           given={Minh},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1199716092382c05331f2501b470db7e}{%
+           family={Tuan},
+           familyi={T\bibinitperiod},
+           given={Luu\bibnamedelima Anh},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=3338d8e933140cf8fedade0e4d139fd2}{%
+           family={Hui},
+           familyi={H\bibinitperiod},
+           given={Siu\bibnamedelima Cheung},
+           giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{3f8f8c1d6cc8b6e818219cc49ec8c7df}
+      \strng{fullhash}{8b58c5410eeabd1290e011847b9d065f}
+      \strng{fullhashraw}{8b58c5410eeabd1290e011847b9d065f}
+      \strng{bibnamehash}{3f8f8c1d6cc8b6e818219cc49ec8c7df}
+      \strng{authorbibnamehash}{3f8f8c1d6cc8b6e818219cc49ec8c7df}
+      \strng{authornamehash}{3f8f8c1d6cc8b6e818219cc49ec8c7df}
+      \strng{authorfullhash}{8b58c5410eeabd1290e011847b9d065f}
+      \strng{authorfullhashraw}{8b58c5410eeabd1290e011847b9d065f}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the AAAI conference on artificial intelligence}
+      \field{number}{1}
+      \field{title}{Skipflow: Incorporating neural coherence features for end-to-end automatic text scoring}
+      \field{volume}{32}
+      \field{year}{2018}
+    \endentry
+    \entry{11_walia2024hybrid}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=eaf8291c45cc70fecd68c02047ef61ee}{%
+           family={Walia},
+           familyi={W\bibinitperiod},
+           given={Tarandeep\bibnamedelima Singh},
+           giveni={T\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{9cff5fa7aeae41a0773d8c1cc1043929}
+      \strng{fullhash}{9cff5fa7aeae41a0773d8c1cc1043929}
+      \strng{fullhashraw}{9cff5fa7aeae41a0773d8c1cc1043929}
+      \strng{bibnamehash}{9cff5fa7aeae41a0773d8c1cc1043929}
+      \strng{authorbibnamehash}{9cff5fa7aeae41a0773d8c1cc1043929}
+      \strng{authornamehash}{9cff5fa7aeae41a0773d8c1cc1043929}
+      \strng{authorfullhash}{9cff5fa7aeae41a0773d8c1cc1043929}
+      \strng{authorfullhashraw}{9cff5fa7aeae41a0773d8c1cc1043929}
+      \field{extraname}{1}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revue d'Intelligence Artificielle}
+      \field{number}{1}
+      \field{title}{Hybrid Approach for Automated Answer Scoring Using Semantic Analysis in Long Hindi Text.}
+      \field{volume}{38}
+      \field{year}{2024}
+    \endentry
+    \entry{12_tarandeep2019}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=eaf8291c45cc70fecd68c02047ef61ee}{%
+           family={Walia},
+           familyi={W\bibinitperiod},
+           given={Tarandeep\bibnamedelima Singh},
+           giveni={T\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=ed65f7c57ee1107d62d935cf8eba6219}{%
+           family={Josan},
+           familyi={J\bibinitperiod},
+           given={Gurpreet\bibnamedelima Singh},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=0e49c45e2884415ba6db0b32a3bd253d}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Amarpal},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{9cff5fa7aeae41a0773d8c1cc1043929}
+      \strng{fullhash}{59710bf00be337469a134eb90ca1f3fa}
+      \strng{fullhashraw}{59710bf00be337469a134eb90ca1f3fa}
+      \strng{bibnamehash}{9cff5fa7aeae41a0773d8c1cc1043929}
+      \strng{authorbibnamehash}{9cff5fa7aeae41a0773d8c1cc1043929}
+      \strng{authornamehash}{9cff5fa7aeae41a0773d8c1cc1043929}
+      \strng{authorfullhash}{59710bf00be337469a134eb90ca1f3fa}
+      \strng{authorfullhashraw}{59710bf00be337469a134eb90ca1f3fa}
+      \field{extraname}{2}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Egyptian Informatics Journal}
+      \field{title}{An efficient automated answer scoring system for Punjabi language}
+      \field{year}{2019}
+      \field{pages}{89\bibrangedash 96}
+      \range{pages}{8}
+    \endentry
+    \entry{wikitotalspeakers}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b6aea1a416c89509a7df1cbb69249cb6}{%
+           family={{Wikipedia contributors}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{fullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{bibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorbibnamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authornamehash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhash}{b6aea1a416c89509a7df1cbb69249cb6}
+      \strng{authorfullhashraw}{b6aea1a416c89509a7df1cbb69249cb6}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[Online; accessed August-2024]}
+      \field{title}{List of languages by total number of speakers --- {Wikipedia}{,} The Free Encyclopedia}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/w/index.php?title=List_of_languages_by_total_number_of_speakers&oldid=1240950774
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=List_of_languages_by_total_number_of_speakers&oldid=1240950774
+      \endverb
+    \endentry
+    \entry{zaghouani2024qcaw}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=d7858bcd0f34c97e84d7a731ded2ba76}{%
+           family={Zaghouani},
+           familyi={Z\bibinitperiod},
+           given={Wajdi},
+           giveni={W\bibinitperiod}}}%
+        {{hash=9efb61c773c76d005ee83129ccb26826}{%
+           family={Ahmed},
+           familyi={A\bibinitperiod},
+           given={Abdelhamid},
+           giveni={A\bibinitperiod}}}%
+        {{hash=227e34554b27c77e2d042504ef1edb97}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Xiao},
+           giveni={X\bibinitperiod}}}%
+        {{hash=72d00b6a931c9ee37902cdd9e4a9cb3c}{%
+           family={Rezk},
+           familyi={R\bibinitperiod},
+           given={Lameya},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{37d9e59f034c8bf8b9a8af0cb36e9a5c}
+      \strng{fullhash}{a7e3c90d9be35ceaf3c817946fba302d}
+      \strng{fullhashraw}{a7e3c90d9be35ceaf3c817946fba302d}
+      \strng{bibnamehash}{37d9e59f034c8bf8b9a8af0cb36e9a5c}
+      \strng{authorbibnamehash}{37d9e59f034c8bf8b9a8af0cb36e9a5c}
+      \strng{authornamehash}{37d9e59f034c8bf8b9a8af0cb36e9a5c}
+      \strng{authorfullhash}{a7e3c90d9be35ceaf3c817946fba302d}
+      \strng{authorfullhashraw}{a7e3c90d9be35ceaf3c817946fba302d}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)}
+      \field{title}{QCAW 1.0: Building a Qatari Corpus of Student Argumentative Writing}
+      \field{year}{2024}
+      \field{pages}{13382\bibrangedash 13394}
+      \range{pages}{13}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
