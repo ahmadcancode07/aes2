@@ -180,45 +180,6 @@
       \verb 10.3233/AIC-130586
       \endverb
     \endentry
-    \entry{15_alobed2021}{inproceedings}{}{}
-      \name{author}{3}{}{%
-        {{hash=ddddbc543acee4ab3df6ee4dc439a678}{%
-           family={Alobed},
-           familyi={A\bibinitperiod},
-           given={Mohammad},
-           giveni={M\bibinitperiod}}}%
-        {{hash=7d72a6f2c18797a44555c05c35a1c6b0}{%
-           family={Altrad},
-           familyi={A\bibinitperiod},
-           given={Abdallah\bibnamedelima MM},
-           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=894c8d1fb90082af63c2aa9ff936e7a1}{%
-           family={Bakar},
-           familyi={B\bibinitperiod},
-           given={Zainab\bibnamedelimb Binti\bibnamedelima Abu},
-           giveni={Z\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {IEEE}%
-      }
-      \strng{namehash}{d10818b84f85b6aa1f2d56d90f2e446f}
-      \strng{fullhash}{c02166c039f35f7a3cb62da3cfdb98f3}
-      \strng{fullhashraw}{c02166c039f35f7a3cb62da3cfdb98f3}
-      \strng{bibnamehash}{d10818b84f85b6aa1f2d56d90f2e446f}
-      \strng{authorbibnamehash}{d10818b84f85b6aa1f2d56d90f2e446f}
-      \strng{authornamehash}{d10818b84f85b6aa1f2d56d90f2e446f}
-      \strng{authorfullhash}{c02166c039f35f7a3cb62da3cfdb98f3}
-      \strng{authorfullhashraw}{c02166c039f35f7a3cb62da3cfdb98f3}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{2021 2nd International Conference on Smart Computing and Electronic Enterprise (ICSCEE)}
-      \field{title}{An Adaptive Automated Arabic Essay Scoring Model Using the Semantic of Arabic WordNet}
-      \field{year}{2021}
-      \field{pages}{45\bibrangedash 54}
-      \range{pages}{10}
-    \endentry
     \entry{18_alqahtani2020svr}{inproceedings}{}{}
       \name{author}{2}{}{%
         {{hash=2dd1b1b7f1b4fad7b0561592e0df1382}{%
