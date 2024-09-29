@@ -51,33 +51,37 @@
 	
 	\maketitle
 	\section{Introduction}
-	Automated Essay Scoring (AES), also known as Automated Essay Grading (AEG), Automated Essay Evaluation, utilizes specialized computer programs to assign grades to written texts in educational settings. Fundamentally, the goal of AES is similar to the traditional method of scoring, which involves training a human rater to interpret and apply a rubric to evaluate students' responses.\\
+	Automated Essay Scoring (AES), also known as Automated Essay Grading (AEG) or Automated Essay Evaluation, involves using specialized computer programs to assign grades to written texts in educational settings. The goal of AES mirrors traditional scoring methods, which rely on human raters trained to apply rubrics for evaluating student responses. AES aims to replicate this process by leveraging computational models.
 	
-	AES models can be designed to evaluate either short-form responses - also known as Automated Short Answer Grading (ASAG) - or essay-style answers, with the latter being more complex. This increased complexity arises from the open-ended nature of essays, making it challenging to evaluate them using a single model answer. Additionally, considerations of various features, such as essay structure, coherence, and style, further complicate the evaluation process. \\
+	AES models are designed to evaluate both short-form responses—often referred to as Automated Short Answer Grading (ASAG)—and more complex essay-style answers. Evaluating essays presents additional challenges due to their open-ended nature, which makes it difficult to compare them against a single correct response. Moreover, features such as essay structure, coherence, and style further complicate the evaluation process, necessitating more advanced techniques.
 	
-	The development of effective AES models necessitates extensive work with Machine Learning (ML) and Natural Language Processing (NLP) to account for the unique characteristics of free-text answers. Majority of models utilize syntactic and/or semantic features. Most models are built on supervised learning, where labeled datasets are needed to train them.
-	\\
-	AES systems significantly enhance the efficiency of grading free-text student responses, particularly in standardized testing and online learning environments. These systems can serve various purposes: they can act as independent assessors of student scores, function alongside human examiners, or monitor the ratings provided by examiners. In cases involving a large number of online learners submitting free-response answers, such as those on popular  MOOC and course platforms with millions of learners, AES system can not only save time but also reduces costs by minimizing the need for human examiners. \\
+	The development of effective AES models requires substantial work in Machine Learning (ML) and Natural Language Processing (NLP). These fields are essential in capturing the unique aspects of free-text answers. Most AES models rely on supervised learning, where large labeled datasets are used to train the system to recognize syntactic and semantic features relevant to the evaluation process.
 	
-	These systems can provide faster speeds and lower costs for grading large volumes of student essays. Furthermore, they can help reduce biases and unreliability that examiners might have \cite{malouff2016bias} and study has also been done in addressing rating biases in training datasets for such models. \cite{amorim2018aesbias}.\\
+	AES systems provide significant advantages in terms of grading efficiency, particularly in standardized testing and online learning environments. These systems can serve multiple roles: acting as independent assessors, working alongside human examiners, or even monitoring human raters for consistency. In large-scale online learning platforms, such as Massive Open Online Courses (MOOCs), AES systems drastically reduce the time and cost associated with human grading by automating the evaluation of free-text responses for millions of learners.
 	
-	On the downside, though, AES systems may require substantial time and financial investment. To achieve high accuracy and reliability, large datasets need to be prepared. Models might also be inaccurate in cases where writing styles may be unique. In some cases, reliability issues may arise since certain aspects of essay, such as assessment of creativity of ideas and propositions is challenging to implement. Overall, the lack of transparency might be questioned by test-takers. If the rules used by the model are publicly released, critics concern that test-takers might exploit these rules to achieve significantly higher scores from the AES system than they would receive from human examiner. \\ 
-	\subsection{Working of an AES system}
+	AES systems offer significant advantages in grading large volumes of student essays, providing faster turnaround times and reducing overall costs. Additionally, they can help mitigate biases and inconsistencies that human examiners may introduce into the grading process \cite{malouff2016bias}. Research has also focused on addressing rating biases in the training datasets used to develop these models \cite{amorim2018aesbias}.
+	
+	However, implementing AES systems can come with substantial time and financial costs. Achieving high accuracy and reliability requires the preparation of large, high-quality datasets. Furthermore, these models may struggle to handle unique writing styles, leading to inaccuracies. Some reliability issues can also emerge when attempting to evaluate subjective elements of essays, such as the creativity of ideas and arguments, which remain difficult to quantify. Moreover, test-takers often question the transparency of these systems. If the underlying rules of an AES model are disclosed, critics argue that students might exploit these rules to achieve higher scores than they would from human examiners.
 	In our collection of papers, we observed that majority of papers tend to follow a similar approach in implementing their model.
+	\subsection{Working Of An AES System}
 	\begin{enumerate}
-		\item \textbf{Preprocessing} \\ The raw text is transformed and modified into a format that can be used by the AES system. This can include removing noise, normalization. Extra features not needed for the next stage are removed as will. This can include removing features like stop words, lemmatization, stemming, tokenization and other techniques utilized in NLP text preprocessing
+		\item \textbf{Preprocessing} The raw text is transformed into a format suitable for the AES system. This process includes removing noise and normalizing the text. Unnecessary features, such as stop words, are eliminated, and techniques like lemmatization, stemming, and tokenization are applied to prepare the text for further analysis.
 		
-		\item \textbf{Feature Extraction} \\ Various features are extracted from preprocessed data. There are two typical approaches that can be utilized for feature identification and extraction. \\ The first being manual extraction of features from the text. The model looks to extract a predetermined set of features through the text, and then calculates to deliver a final score using those features as variables. However, such models can be more inaccurate than those which automatically extract features. Deep learning based models learn to automatically identify features in order to increase accuracy of the predictive score. They consist of several hidden layers in the neural network, hence making it harder to identify the complex features they use.
+		\item \textbf{Feature Extraction} Features are extracted from the preprocessed data using one of two approaches. The first involves manually defining and extracting a set of predetermined features, which are then used to calculate a score. However, this method is often less accurate compared to models that automatically extract features. Deep learning models, which contain multiple hidden layers in their neural networks, automatically identify and use complex features to improve prediction accuracy.
 		
-		\item \textbf{AES Model} \\ Model is trained using machine learning on the features extracted in Step 2. Some employ  Machine Learning, or Deep learning algorithms to learn the relation between the extracted text features and the essay score in the training dataset. This step utilizes the statistical yields and weights. Some models use a hybrid approach, combining traditional and machine learning methods.
-		\item \textbf{Scoring} \\ A test dataset can include essays that are either based on specific prompts or are of a generic type. This dataset is used to generate scores for the essays. Additionally, the work involves normalizing or scaling these scores to align with the scoring standards of human examiners.
+		\item \textbf{AES Model} The model is trained using machine learning algorithms on the extracted features. These models, which may use traditional machine learning or deep learning techniques, learn the relationship between the text features and essay scores from the training dataset. Some systems also employ a hybrid approach, combining traditional methods with machine learning to enhance accuracy.
+		
+		\item \textbf{Scoring} The trained model is applied to a test dataset, which may consist of essays written in response to specific prompts or more general topics. The model generates scores for these essays, and the scores are often normalized or scaled to align with the scoring standards used by human examiners.
 	\end{enumerate}
-	After the score is generated, the model is evaluated by comparing the generated scores on the test dataset against the human examiner scores, and correlation / accuracy is measured.
+	After generating scores, the model is evaluated by comparing its results on the test dataset with the scores assigned by human examiners, measuring the correlation and accuracy between the two.
 	\subsection{Development of AES Systems in English Language}
-	The earliest development of Automated Essay Scoring (AES) started in 1996 with the Project Essay Grader (PEG) by Ellis Paige \cite{page2003peg}, which provided scores based on features like grammar, word choice, and word length and vocabulary etc. The model works by extracting such textual features, and trained to determine the grade using the best predicted combination of the weighted features. The features used in the model were considered to be indirect predictors of writing quality. Therefore, the model was vulnerable to cheating. \\ Further work was done to implement AES systems that could extract features directly contributing to the writing quality. One such work was the Intelligent Essay Assessor in 1999 \cite{foltz1999essayassessor}, which used Latent Semantic Analysis (LSA). This statistical approach identified the association among the words in a topic. This ability to determine semantic similarity helped determine the quality of the essay by comparing it against a similar text of known quality. Thus, it could detect plagiarism and was more fool-proof than PEG. \\ The E-rater Intellimetric (2006) \cite{rudner2006intellimetric} and the Bayesian Essay Test Scoring System (BETSY) \cite{rudner2002bayes} also utilized NLP-based techniques. Much work has been done in employing various other techniques, including deep learning, and leveraging transformer-based models like DeBERTa \cite{susanto2023deberta}. These trends can provide an insight into the development of AES models and different methods being adopted over time. \textcite{ramesh2022review} have conducted a thorough review of AES in the English language. \\
-	Furthermore, education systems in many US states have integrated AES systems in their testing. This includes Utah Compose Tool, and Ohio standardized test. 
+	The earliest development of Automated Essay Scoring (AES) began in 1966 with the Project Essay Grader (PEG) by Ellis Paige \cite{page2003peg}. PEG assigned scores based on features such as grammar, word choice, word length, and vocabulary. The model worked by extracting these textual features and using a weighted combination to predict grades. However, since the features were considered indirect indicators of writing quality, the model was susceptible to manipulation by test-takers.
 	
+	Subsequent developments focused on creating AES systems that could evaluate features directly contributing to writing quality. One example is the Intelligent Essay Assessor (1999) \cite{foltz1999essayassessor}, which used Latent Semantic Analysis (LSA), a statistical technique for identifying relationships between words in a given topic. This method allowed the model to assess essay quality by comparing it to a reference text of known quality, making it more resistant to cheating and plagiarism than PEG.
 	
+	Other notable AES models, such as E-rater Intellimetric (2006) \cite{rudner2006intellimetric} and the Bayesian Essay Test Scoring System (BETSY) \cite{rudner2002bayes}, incorporated natural language processing (NLP) techniques. More recent advancements include the use of deep learning and transformer-based models like DeBERTa \cite{susanto2023deberta}. These trends reflect the ongoing evolution of AES models and the diverse methodologies employed over time. \textcite{ramesh2022review} provide a comprehensive review of AES in the English language.
+	
+	Furthermore, several US states, such as Utah and Ohio, have integrated AES systems into their educational testing programs, exemplified by tools like the Utah Compose Tool and Ohio's standardized tests.
 	
 	\subsection{Development of AES in Foreign languages}
 	Development of AES systems in other languages depends on various factors because of the popularity of that language and the unique opportunities and challenges that language might present. Each language has different set of grammatical, and morphological rules. Therefore, they have variations in syntactic and semantic aspects of language.
@@ -91,44 +95,55 @@
 		
 		\label{searchresult}
 	\end{figure}
-	Different language families have distinct linguistic features, which can impact how AES systems are implemented in languages belonging to those families. The classification of language families is inherently variable and not universally agreed upon. Therefore, the discussion presented here should be regarded as a generalization, focusing primarily on well-known and widely spoken languages. \\
-	Figure \ref{searchresult} Shows the ratio of the number of results for a Google Scholar Search query number to the number of language speakers \cite{wikitotalspeakers} in top 10 most spoken languages. It is assumed that given a larger number of speakers of a certain language, there will be more language learners (native and non-native). While Google Scholar does not always present relevant search results, the statistic can be, however, used to provide an estimate of the development of AES systems in the respective languages. The search results show that despite a large number of speakers, Many languages, especially Indic, have a surprising lack of work done. This can be attributed to various reasons like the lack of existing NLP related resources, or lack of existing datasets. \\
-	While individual languages in a family can differ in various ways, a lot of features can be common. For example, all languages in Sino-Tibetan family (Chinese, Mandarin, Burmese etc.) share a logo-graphic writing system. \\
-	On the other hand, the Indo-European language family is the largest and most diverse, comprising of numerous branches with distinct characteristics. Each branch within the Indo-European has a variety of unique features while sharing some common root vocabulary and fundamental language construction.\\
+	The development of AES systems in languages other than English depends on several factors, including the popularity of the language and the unique challenges that language may present. Each language has its own set of grammatical and morphological rules, resulting in variations in syntactic and semantic structures.
 	
-	This paper reviews the development of widely spoken Indo-Iranian (Indic) languages from the Indo-European Family and Arabic from the Semitic Family. These languages have been chosen because of their unique linguistic challenges and personal familiarity with these language groups.
-	These include:
+	Most languages other than English have fewer resources and less research devoted to AES. This lack of development can be attributed to various factors, such as a smaller number of speakers compared to widely spoken languages like English or less prevalence in formal education systems. 
+	
+	To address these challenges, work is being done to create multilingual models, sometimes by translating text into English for scoring. \textcite{firoozi2024bert} provides an example of this approach. Different language families have distinct linguistic features that can influence how AES systems are implemented. However, the classification of language families is not universally agreed upon. As such, the discussion presented here should be regarded as a generalization, focusing primarily on well-known and widely spoken languages.
+	
+	Figure \ref{searchresult} shows the ratio of Google Scholar search results to the number of speakers of the top 10 most spoken languages \cite{wikitotalspeakers}. The assumption is that languages with more speakers will also have more learners, both native and non-native. While Google Scholar may not always yield relevant results, this statistic provides an estimate of AES development in these languages. The results indicate that despite having a large number of speakers, many languages—particularly those from the Indic group—have surprisingly little research. This lack of work may be due to the absence of NLP resources or insufficient datasets.
+	
+	Although individual languages within a family may differ in various ways, many share common features. For example, all languages in the Sino-Tibetan family (e.g., Chinese, Mandarin, Burmese) use a logographic writing system. In contrast, the Indo-European family is the largest and most diverse, containing numerous branches with distinct linguistic characteristics. While each branch has unique features, many share common root vocabulary and fundamental grammatical structures.
+	
+	This paper reviews the development of AES systems for widely spoken Indo-Iranian languages from the Indo-European family and Arabic from the Semitic family. These languages were selected due to their unique linguistic challenges and the author’s personal familiarity with them. The languages included in this review are:
 	\begin{enumerate}
 		\item Arabic
 		\item Persian
 		\item Hindi
 		\item Bengali
 	\end{enumerate}
-	While existing literature review on Automated Essay Scoring (AES) is focused on Arabic \cite{litreviewarabic}, this paper aims to expand the review by including recent studies on both Arabic and Indic languages, find trends of different methods and trends as well as their potential to be used in other low-resource languages.
+	
+	While previous literature reviews on AES systems have focused on Arabic \cite{litreviewarabic}, this paper aims to expand the scope by including recent studies on both Arabic and Indic languages. The goal is to identify trends in AES methods and explore their potential application to other low-resource languages.
+	
 	%\newpage
-	\section{Research Method}
-	\subsection{Research Questions}
-	Our review will evaluate each paper on the basis of following research questions:
-	\begin{enumerate}[label=\textbf{RQ\arabic*}, leftmargin=1.5cm]
-		\item What are the datasets available for AES systems in the selected languages?
-		\item How did the paper deal with preprocessing?
-		\item What features were used by the paper and the model utilized?
-		\item What were the drawbacks and advantages of the utilized models?
-	\end{enumerate}
-	\subsection{Search Process}
-	Well-known computer science repositories including ACM, IEEE Xplore, Springer, Science Direct, ACL were searched with publications from 2010 to date 2024. \\
-	The search strings included ``Automated Essay Scoring", ``Automated Essay Evaluation", ``Automated Essay Grading", ``AES", ``Automated Answer Scoring"  with name of the language in the search query. Due to limited number of papers found, additional searches were made through Google Scholar, and preprints like Archiv as well.
-	\\
-	\subsection{Selection Criteria and Quality Assessment}
-	The searched papers then went through an inclusion and exclusion criteria.
-	\begin{enumerate}[label=\textbf{Criteria \arabic*}, leftmargin=2cm]
-		\item The papers written in English language are included which explicitly focus on development, evaluation of AES systems
-		\item Literature review papers, thesis papers and state of the art papers were excluded.
-		\item For non-peer-reviewed papers, we included only those authored by individuals affiliated with reputable institutions and who have a history of prior peer-reviewed publications. Additionally, only papers hosted on well-established preprint servers were included.
-		\item The paper involved training a dataset and evaluating the performance of their model. Papers solely proposing a methodology were excluded.
-	\end{enumerate}
-	We went through each of the selected papers and assessed the methodological rigor of each study, considering factors such as the robustness of the research design, the reliability of the data used, and the appropriateness of the analytical techniques employed. \\
-	From the 28 papers collected, 19 were selected that followed our selection criteria.
+\section{Research Method}
+\subsection{Research Questions}
+Our review evaluates each paper based on the following research questions:
+\begin{enumerate}[label=\textbf{RQ\arabic*}, leftmargin=1.5cm]
+	\item What datasets are available for AES systems in the selected languages?
+	\item How does each paper address preprocessing?
+	\item What features and models are utilized in each paper?
+	\item What are the advantages and drawbacks of the models used?
+\end{enumerate}
+
+\subsection{Search Process}
+We searched well-known computer science repositories, including ACM, IEEE Xplore, Springer, ScienceDirect, and ACL, for publications from 2010 to 2024. The search strings used included terms such as “Automated Essay Scoring,” “Automated Essay Evaluation,” “Automated Essay Grading,” “AES,” and “Automated Answer Scoring,” combined with the name of the language in the search query. 
+
+Due to the limited number of papers found, additional searches were conducted through Google Scholar and preprint platforms such as arXiv.
+
+\subsection{Selection Criteria and Quality Assessment}
+The identified papers were filtered using inclusion and exclusion criteria:
+\begin{enumerate}[label=\textbf{Criteria \arabic*}, leftmargin=2cm]
+	\item Only papers written in English that explicitly focus on the development and evaluation of AES systems were included.
+	\item Literature review papers, thesis papers, and state-of-the-art surveys were excluded.
+	\item Non-peer-reviewed papers were included only if authored by individuals affiliated with reputable institutions and with a history of peer-reviewed publications. Additionally, only papers hosted on well-established preprint servers were considered.
+	\item Papers that trained models using datasets and evaluated their performance were included, while papers proposing methodologies without evaluation were excluded.
+\end{enumerate}
+
+Each selected paper was assessed for methodological rigor, considering factors such as the robustness of the research design, the reliability of the data used, and the appropriateness of the analytical techniques employed. 
+
+Out of the 28 papers initially collected, 19 were selected based on the outlined criteria.
+
 	\renewcommand{\arraystretch}{1.5}
 	\begin{table}[]
 		\centering
@@ -174,20 +189,19 @@
 			\item Supervised and unsupervised
 		\end{itemize}
 	\end{comment}
-	\section{Linguistic Challenges}
-	It is an Indo-European langauge with Iranian branch, having 79 million Iranian-Persian (Rank 25) native and non-native speakers. \cite{wikitotalspeakers} 
-	Persian is mainly spoken in 3 different varieties. It is a pluricentric language and includes Standard Persian of Iran, Dari in Afghanistan and Tajik in Tajikistan Region. Other related closely related languages include Pashto (Pakistan and Afghanistan), Balochi (Pakistan, Iran, Afghanistan) and Kurdish etc.
-	While Tajik is written in a modified Cyrillic alphabet, both Dari and Standard Persian use modified Arabic script for writing. However, existing work has only been done in Standard Persian. \\
-	Persian is made of a morphology system mainly relying on affixes. For example the word \textfarsi{بیابان} (/biyâbân/) is made up of a prefix and suffix with the root word: bi (without), âb (water), ân (suffix for place) - meaning a desert. Moreover, these affixes can imply different meanings depending on the context. Addition of certain affixes to nouns can also turn nouns into adjectives. Being an Indo-European language, Persian shares a lot of vocabulary with other Indo-European languages. However, due to Arabic influence, it also inherits loan vocabulary from Arabic. \\
-	The language, unlike Arabic, does not have grammatical gender.
-	In Persian, verb construction involves combining verb roots with prefixes, suffixes, and auxiliary verbs to express various tenses and meanings. The verb root is the core, derived by removing the infinitive ending (noon) (-an). Various prefixes can be added to change the form of verb, as well as to express a compound verb (consisting of a noun as well as adjective)
-	\\
-	NLP can be very different in Arabic and Persian, however, from other Indo European languages. Both share a similar way to show vowels. Short vowels are expressed by diacritics (glyph added to a basic letter). Commonly used words, however, are not annotated with diacritics. Long vowels, on the other hand, are expressed using the letters of alphabet. Lack of diacritics in modern languages has posed a challenge in text analysis in these languages, because understanding the context of the sentence is required to determine the meaning of the words. In Persian, \textfarsi{مرد} (/mard/) can be interpreted as \textfarsi{مَرد}, meaning
-	``man", but \textfarsi{مِرد} (/mird/) means ``deceased".
-	
-	Arabic mostly consists of three forms: Formal (used in formal texts, like in Holy Quran), Colloquial (Informal conversation used in day-to-day communication) and Modern Standard (Standard across all Arab dialects and formal mode of communication). Arabic has vowelization which can be expressed through letters (\textarabic{ا،و،ى}) or by diacritics. Therefore, just like Persian, written modern standard or colloquial Arabic requires context to determine the meanings of the words. For example, \textarabic{ذهب} can be \textarabic{ذَهَبَ} (meaning to go), or \textarabic{ذَهَبٌ} (meaning gold). \\
-	Being an agglutinative language, morphemes are used to form compound words. Words used in different contexts can have different implied meanings as well, further increasing the ambiguity and affecting the performance of AES systems. \\
-	Hindi uses a right-to-left Devanagri script and is closely related to other Indic languages. Bengali uses Bengali Script which is similar to Devanagri. These scripts follow the Abugida writing system, which consists of consonant letters with inherent vowels that can be muted or modified using diacritics. They are inflected, with verb endings that can modify the noun, indicated gender, number, case, politeness level or tense. For example, \textbengali{তুমি} (/tumi/, meaning ``you") in Bengali is informal, while \textbengali{আপনি} (/apni/) is formal. Thus, the choice between them can affect the tone of the essay. These languages have compound words and polysemy: similar sounding words with different meaning depending on the context. For example, in hindi, \texthindi{बाल} (/bāl/) can mean either ``hair" or ``child", making semantic analysis crucial.
+\section{Linguistic Challenges}
+Persian, an Indo-European language from the Iranian branch, has approximately 79 million native and non-native speakers \cite{wikitotalspeakers}. It is primarily spoken in three varieties: Standard Persian (Iran), Dari (Afghanistan), and Tajik (Tajikistan). As a pluricentric language, Persian presents challenges in NLP due to its varieties and different writing systems. While Tajik is written in a modified Cyrillic alphabet, both Dari and Standard Persian use a modified Arabic script. However, existing work has primarily focused on Standard Persian.
+
+Persian's morphology system is largely affix-based. For instance, the word \textfarsi{بیابان} (/biyâbân/) is composed of a prefix and suffix around the root: \textit{bi} (without), \textit{âb} (water), and \textit{ân} (place suffix) — meaning desert. Moreover, these affixes can change meaning depending on the context, and in some cases, nouns can be turned into adjectives with additional affixes. Although Persian shares vocabulary with other Indo-European languages, its large influence from Arabic introduces significant loanwords.
+
+Unlike Arabic, Persian does not have grammatical gender. Its verb construction relies on combining verb roots with prefixes, suffixes, and auxiliary verbs to express tense and meaning. The verb root is derived by removing the infinitive ending (-an). Additionally, prefixes can alter the form of the verb, while compound verbs involve both a noun or adjective.
+
+NLP challenges in Arabic and Persian differ significantly from those in other Indo-European languages, particularly due to how short vowels are indicated. In both languages, diacritics represent short vowels but are often omitted in modern texts, adding ambiguity to the analysis. Long vowels, however, are represented with specific alphabet letters. This omission of diacritics complicates text analysis since context is necessary to derive correct meanings. For example, in Persian, \textfarsi{مرد} (/mard/) can mean \textit{man}, while \textfarsi{مِرد} (/mird/) means \textit{deceased}.
+
+Arabic, a Semitic language, has three forms: formal (used in texts like the Quran), colloquial (for daily conversations), and Modern Standard Arabic (used formally across the Arab world). Arabic’s vowel system includes both letters (\textarabic{ا،و،ى}) and diacritics. Like Persian, modern standard and colloquial Arabic rely on context to interpret the correct meanings. For instance, the word \textarabic{ذهب} can be read as \textarabic{ذَهَبَ} (meaning ``to go") or \textarabic{ذَهَبٌ} (meaning ``gold"). Furthermore, as an agglutinative language, Arabic uses morphemes to form compound words. This, combined with words changing meaning depending on context, presents additional challenges for AES systems.
+
+Hindi, which uses the Devanagari script, and Bengali, written in the Bengali script, are both derived from the Abugida writing system. These languages follow a consonant-vowel structure, where inherent vowels can be muted or modified with diacritics. Verb inflections modify nouns and indicate gender, number, case, politeness level, and tense. For example, in Bengali, \textbengali{তুমি} (/tumi/, meaning ``you") is informal, while \textbengali{আপনি} (/apni/) is formal. The choice of words can influence the tone and meaning of the essay. Additionally, these languages have compound words and exhibit polysemy, where words have different meanings depending on the context. For example, in Hindi, \texthindi{बाल} (/bāl/) can mean either ``hair" or ``child", making semantic analysis essential.
+
 	\section{Resources}
 	\textbf{RQ1: What are the available datasets for AES systems in the selected languages?} \\
 	The papers dealt with either short, topic-specific questions or long essays. Some papers have publicly released their datasets while others have not.
@@ -220,22 +234,34 @@
 	\end{table}
 	%\newpage
 	%\restoregeometry
-	The datasets in the table \ref{arabicdatasets} are sourced from papers focused on developing AES  systems. The papers dealing with short questions are labelled as short and papers with essay-style prompts are labelled as long in the table. Majority of the datasets are not publicly available, though few have their codebases available. Only 1 had its dataset public. 
-	However, it is important to note that some papers have exclusively focused on the creation and development of corpus in Arabic. We searched for additional datasets apart from the papers selected in our review:
+	The datasets in Table \ref{arabicdatasets} are sourced from papers focused on developing AES systems. The papers dealing with short questions are labeled as "short," while those with essay-style prompts are labeled as "long." The majority of the datasets are not publicly available, although a few have their codebases accessible. Only one dataset is publicly available. 
 	
-	\footnotetext[1]{{Dataset not public, but the \href{https://github.com/albertusk95/nips-challenge-essay-scoring-arabic}{code}} is}
-	\footnotetext[2]{Only \href{https://github.com/hikmatabdeljaber/Arabic-Essay-Scoring}{codebase and a dataset sample} public}
+	It is important to note that some papers have exclusively focused on the creation and development of corpora in Arabic. In our review, we also searched for additional datasets apart from the selected papers:
 	
+	\footnotetext[1]{Dataset not public, but the \href{https://github.com/albertusk95/nips-challenge-essay-scoring-arabic}{code} is available.}
+	\footnotetext[2]{Only \href{https://github.com/hikmatabdeljaber/Arabic-Essay-Scoring}{codebase and a dataset sample} are public.}
 	
 	\begin{enumerate}
-		\item \textbf{The Qatari Corpus of Argumentative Writing (QCAW)  \cite{zaghouani2024qcaw} (\href{https://catalog.ldc.upenn.edu/LDC2022T04}{Public})} \\ It has 390 argumentative essays, with 195 written in Arabic. The public dataset has annotated parts of speech tags but lacks holistic scoring annotations.
-		\item \textbf{QAES by \textcite{21_bashendy2024qaes} (Public)} \\ This paper annotates the QCAW dataset by \textcite{zaghouani2024qcaw} by adding scores and measures which include, organization, vocabulary, style etc. in addition to a holistic score. This is the only dataset with essay-style answers we found that was designed specifically for AES system in Arabic. The paper claims to have the dataset publicly available but when writing, we were unable to find the dataset.
-		\item \textbf{The Zayed Arabic English Bilingual Undergraduate Corpus (ZAEBUC) \cite{habash2022zaebuc} (\href{https://sites.google.com/view/zaebuc/home} {Public})}:  \\ 
-		Consists of 388 English and 214 Arabic annotated essays. They are taken from undergraduate freshman students from UAE. The corpus is manually and automatically annotated for parts of speech, lemmas, and other features.
-		\item \textbf{The Arabic Learner Corpus (ALC) (\href{https://www.arabiclearnercorpus.com/}{Private})} \\ Produced using 942 students consisting of native and non-native Arabic speakers and learners. Average length of 178 words.
-		\item \textbf{AR-ASAG: ARabic Dataset for Automated Short Answer Grading \cite{ouahrani2020ar-asag} (\href{https://github.com/leilaouahrani/AR-ASAG-Dataset}{Public})} \\ 48 questions were answered by 2133 students in a cybercrimes course.
-		\item \textbf{Arascore by \textcite{nael2022arascore} (\href{https://github.com/abdelrahmanelnaka/AraScore-Dataset}{Public})} \\ It has translated the English ASAP short answer scoring dataset into Arabic using Google Translate.
-		\item \textbf{Arabic Automated Short Answers Grading System for Moroccan History (\href{https://github.com/ahmed-bentajhamyani/grading-system}{Public})} \\ Although an associated paper with the GitHub repository was not found, the repository has database of responses for 10 questions by high school students, ranging from 70 to 140 answers for each question.
+		\item \textbf{The Qatari Corpus of Argumentative Writing (QCAW) \cite{zaghouani2024qcaw} (\href{https://catalog.ldc.upenn.edu/LDC2022T04}{Public})} \\ 
+		This dataset contains 390 argumentative essays, 195 of which are written in Arabic. The public dataset includes annotated parts of speech tags but lacks holistic scoring annotations.
+		
+		\item \textbf{QAES by \textcite{21_bashendy2024qaes} (Public)} \\ 
+		This paper annotates the QCAW dataset by \textcite{zaghouani2024qcaw} by adding scores and measures including organization, vocabulary, style, etc., in addition to a holistic score. This is the only dataset with essay-style answers designed specifically for AES systems in Arabic. Although the paper claims to have the dataset publicly available, we were unable to locate it at the time of writing.
+		
+		\item \textbf{The Zayed Arabic English Bilingual Undergraduate Corpus (ZAEBUC) \cite{habash2022zaebuc} (\href{https://sites.google.com/view/zaebuc/home}{Public})} \\ 
+		This corpus consists of 388 English and 214 Arabic annotated essays. They are collected from undergraduate freshman students in the UAE and are manually and automatically annotated for parts of speech, lemmas, and other features.
+		
+		\item \textbf{The Arabic Learner Corpus (ALC) (\href{https://www.arabiclearnercorpus.com/}{Private})} \\ 
+		This corpus is produced using data from 942 students consisting of both native and non-native Arabic speakers and learners, with an average essay length of 178 words.
+		
+		\item \textbf{AR-ASAG: ARabic Dataset for Automated Short Answer Grading \cite{ouahrani2020ar-asag} (\href{https://github.com/leilaouahrani/AR-ASAG-Dataset}{Public})} \\ 
+		This dataset contains 48 questions answered by 2,133 students in a cybercrimes course.
+		
+		\item \textbf{Arascore by \textcite{nael2022arascore} (\href{https://github.com/abdelrahmanelnaka/AraScore-Dataset}{Public})} \\ 
+		This dataset has translated the English ASAP short answer scoring dataset into Arabic using Google Translate.
+		
+		\item \textbf{Arabic Automated Short Answers Grading System for Moroccan History (\href{https://github.com/ahmed-bentajhamyani/grading-system}{Public})} \\ 
+		Although an associated paper with the GitHub repository was not found, the repository contains a database of responses for 10 questions answered by high school students, ranging from 70 to 140 answers for each question.
 	\end{enumerate}
 	
 	\subsection*{Datasets in Indic Languages}
@@ -254,33 +280,35 @@
 		\label{datasetindic}
 	\end{table}
 	
-	Additional search was made to look for learning corpus for AES system but publicly available datasets could not be found in Indic languages.
+Additionally, a search was conducted to look for learning corpora for AES systems in Indic languages; however, publicly available datasets could not be found.
 	
 	\section{Preprocessing}
 	\textbf{RQ2: How did the papers deal with preprocessing?} \\
-	Preprocessing in AES systems typically follows standard methods used in Natural Language Processing (NLP). Though, few papers also followed additional processes due to the method being used. Such exceptions are covered in research question 3.
-	\subsection{Tokenization}
-	Splitting of strings into smaller units of text. The text is split into units of noun, verbs, adverbs, conjunctions, adjectives and prepositions.
-	Example (Translating to "And the boy started studying"): \\
-	Before tokenization: ``\textarabic{وبدأ الولد بالدراسة ۔}" \\
-	After tokenization:
-	``\textarabic{و}" (and), ``\textarabic{بدأ}" (started), ``\textarabic{الولد}" (the boy), ``\textarabic{ب}" (with) , ``\textarabic{الدراسة}" (studying), ``."
+	Preprocessing in AES systems typically follows standard methods used in Natural Language Processing (NLP). However, a few papers also followed additional processes due to the methods being used. Such exceptions are covered in Research Question 3.
 	
-	\subsection{Stop words removal}
-	They are words that are considered to not be important in determining the meaning of text. Therefore, the tokens ``\textarabic{و}" and ``\textarabic{ب}" will be removed as they don't significantly contribute to the meaning of the text. Distinction of stop words can be made using lists prepared by linguists or by depending on the frequency of that token in the text, grammatical function in text.
+	\subsection{Tokenization}
+	Tokenization involves splitting strings into smaller units of text. The text is divided into units such as nouns, verbs, adverbs, conjunctions, adjectives, and prepositions. 
+	For example, translating the phrase "And the boy started studying" in Arabic: \\ 
+	Before tokenization: ``\textarabic{وبدأ الولد بالدراسة ۔}" \\ 
+	After tokenization: 
+	``\textarabic{و}" (and), ``\textarabic{بدأ}" (started), ``\textarabic{الولد}" (the boy), ``\textarabic{ب}" (with), ``\textarabic{الدراسة}" (studying), ``."
+	
+	\subsection{Stop Words Removal}
+	Stop words are words that are considered not significant in determining the meaning of text. Therefore, tokens like ``\textarabic{و}" and ``\textarabic{ب}" will be removed as they do not significantly contribute to the text's meaning. The distinction of stop words can be made using lists prepared by linguists or by analyzing the frequency of tokens in the text and their grammatical function.
+	
 	\subsection{Normalization}
-	Modifying text to remove unneeded characters. This includes diacritical marks, non-alphanumeric characters, etc. 
+	Normalization involves modifying text to remove unnecessary characters, including diacritical marks and non-alphanumeric characters.
+	
 	\subsection{Stemming}
-	This process involves determining the root or stem of words. This can be particularly challenging in Arabic and certain Indic languages due to their complex morphologies. Here WordNets can be helpful in determining the roots of these words.
-	By continuing the example: \\
-	``\textarabic{بدأ}" $\rightarrow$ ``\textarabic{بدأ}": The term, meaning "started", is already in it's stemmed form. \\
-	``\textarabic{الولد}" $\rightarrow$ ``\textarabic{ولد}": Root of the word for boy \\
-	``\textarabic{الدراسة}" $\rightarrow$ 
-	``\textarabic{درس}": "Studying" is reduced to it's root \\
-	Different stemmers used in Arabic and Indic Languages tended to have two types: light stemming and root based stemming. Light stemming only deals with removing common affixes while root based is a more aggressive approach to reduce the word to its base form.
+	Stemming determines the root or stem of words. This can be particularly challenging in Arabic and certain Indic languages due to their complex morphologies. WordNets can be helpful in determining the roots of these words. Continuing with the previous example: \\ 
+	``\textarabic{بدأ}" $\rightarrow$ ``\textarabic{بدأ}": The term meaning "started" is already in its stemmed form. \\ 
+	``\textarabic{الولد}" $\rightarrow$ ``\textarabic{ولد}": The root of the word for boy. \\ 
+	``\textarabic{الدراسة}" $\rightarrow$ ``\textarabic{درس}": "Studying" is reduced to its root. \\ 
+	Different stemmers used in Arabic and Indic languages tend to fall into two categories: light stemming and root-based stemming. Light stemming only removes common affixes, while root-based stemming is a more aggressive approach to reduce words to their base forms.
 	
 	\subsection{Parts of Speech Tagging}
-	This involves labeling input text by their role in the sentence. Some papers did not implement it in their preprocessing stage.
+	Parts of Speech (POS) tagging involves labeling input text according to their role in the sentence. Some papers did not implement this in their preprocessing stage.
+		
 	
 	% \subsection{Ontologies}
 	% \subsubsection{Arabic}
@@ -307,61 +335,104 @@
 		\caption{Number of short Answer and number of long answer models}
 		\label{shortlongcomparison}
 	\end{figure}
+	\subsubsection*{Short and Long Answer Approaches}
+	Models designed for short answers often utilize different methodologies compared to those for long essay-style prompts. Short answers typically consist of a few structured sentences that address specific questions or facts, requiring less complex language processing. In contrast, essays are longer and more intricate, necessitating evaluation across multiple dimensions, such as content, coherence, grammar, and writing style. This complexity demands sophisticated models capable of capturing nuances in argumentation and organization.
+	
+	Most short answer models implement text similarity algorithms against a model answer, a technique that is not applicable to long essay texts. Long essay scoring systems must account for additional features, such as coherence and writing style. Some approaches are relevant to both short and long text systems, which will be categorized separately.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\linewidth]{img/papersbytype.pdf}
+		\caption{Number of short answer and long answer models}
+		\label{shortlongcomparison}
+	\end{figure}
 	
 	\subsubsection*{Text-to-Text Similarity Algorithms}
-	Text similarity algorithms can be used to compare the student's answer with a model answer or answers from training dataset. This includes knowledge based similarity, string based, corpus based, and hybrid text similarity measures. They try to identify the degree of similarity between words based on the information extracted from the text. Hybrid uses different combines these measures to generate a similarity measure. Common measures used in papers dealt with either lexical similarity (similarity of characters) or semantic similarity (similarity of meaning).
+	Text similarity algorithms compare students' responses with model answers or those from a training dataset. These algorithms include knowledge-based similarity, string-based similarity, corpus-based measures, and hybrid approaches, which aim to identify the degree of similarity between words based on extracted information. Hybrid methods combine various measures to generate a comprehensive similarity metric. Common approaches in literature focus on either lexical similarity (character similarity) or semantic similarity (meaning similarity).
+	
 	\begin{enumerate}
-		\item Knowledge Based Similarity \\ Knowledge based uses semantic networks to assess the similarity of ideas between the text. Semantic networks are used for this approach. One database used for this is the WordNet. WordNet has its versions available in various languages, including Arabic, Hindi, Bengali and Persian. 
-		\item Corpus Based \\ It uses information from large corpora to measure semantic similarity between words. A common corpus based technique is latent semantic analysis (LSA). This technique assumes that words with similar meaning will occur in similar portions of text. Term document matrix, a matrix of word counts per document, is made. Raw frequencies are often transformed using weighting schemes such as TF-IDF. It includes Term Frequency (TF): the number of occurrences of the term in the document, and Inverse Document Frequency (IDF).
-		$$\text{TF}(t, d) = \frac{\text{Number of occurrences of term }t}{\text{Total number of occurrences in document }d} $$
-		$$\text{IDF}(t, D) = \log \left( \frac{\text{Total number of Documents in the Corpus }D}{\text{Total occurrences of the term }t} \right) $$
-		The weight $w$ is then determined by multiplying TF and IDF.
-		It is followed by mathematical technique called Singular Value Decomposition (SVD), which lowers the rank of the term-document matrix. Matrices for both documents are then compared by cosine similarity. \\ One drawback of LSA is that it can be limited when dealing with contextual ambiguity. For example, ``bank" (as in a financial institution) and ``bank" (as in the side of a river) have different meanings but will be placed semantically close together in latent space. LSA also treats text as ``bag of words", meaning that it ignores the order of words in a sentence. For example, ``The dog chased the cat" and ``The cat chased the dog" would be treated similarly by LSA even though they have quite opposite meanings. Furthermore, the reliance on SVD makes it sensitive to quality and quantity of the input data. Therefore, it requires large, high quality training data. \\ Latent Semantic Indexing (LSI) is essentially an application of LSA and is primarily used for information retrieval purposes. \\ 
-		\textbf{DISCO} (Extracting Distributionally similar words
-		using CO-occurrences) is a tool developed by \href{https://www.linguatools.de/disco/disco_en.html}{Linguatools}. It extracts distributionally similar words by analyzing a large text corpus to gather co-occurrence data, where words are examined based on how frequently they appear together within a defined context window. It constructs co-occurrence matrices and uses similarity measures such as cosine similarity or Jacquard similarity to quantify the relationship between words. Finally, DISCO generates lists of similar words by ranking them based on their co-occurrence patterns and similarity scores. It currently supports Arabic, Czech, Dutch, English, French, German, Italian, Russian and Spanish.
+		\item \textbf{Knowledge-Based Similarity} \\
+		Knowledge-based approaches use semantic networks to assess the similarity of ideas within the text. A commonly used database is WordNet, which has versions in various languages, including Arabic, Hindi, Bengali, and Persian.
 		
-		\item String-based Similarity \\ Judges similarity of two strings based on the character composition and string sequences. Some string based similarity measures used in our paper included:
-		\begin{enumerate}[]
-			\item Damerau-Levenshtein (DL) distance \\ It is the minimum number of operations required to turn string $S_1$ into string $S_2$, where the operations can be insertion, deletion, transposition of characters, or substitution of single character. Normalization \cite{1_gomaa2014arabic} is done to compute the similarity.
-			\item Longest Common Substring (LCS) \\ It identifies the longest sequence of characters (substring) shared between two texts. Such scoring can be useful for determining whether key ideas and references are present.
-			\item N-gram Similarity \\ An n-gram is a contiguous sequence of n items from a given text, where the items can be characters, words, or even phonemes. It is a sliding window approach that can be used on a character level or word level. First splits text into smaller units (n-grams) of different sizes. Then, the number of matching n-grams can be counted or jacquard similarity can be calculated.
+		\item \textbf{Corpus-Based Similarity} \\
+		This approach utilizes large corpora to measure semantic similarity between words. A prevalent technique is Latent Semantic Analysis (LSA), which posits that words with similar meanings occur in similar contexts. A term-document matrix, representing word counts per document, is created. Raw frequencies are transformed using weighting schemes such as TF-IDF:
+		\begin{align*}
+			\text{TF}(t, d) &= \frac{\text{Number of occurrences of term } t}{\text{Total number of occurrences in document } d} \\
+			\text{IDF}(t, D) &= \log \left( \frac{\text{Total number of Documents in the Corpus } D}{\text{Total occurrences of the term } t} \right)
+		\end{align*}
+		The weight \( w \) is then determined by multiplying TF and IDF. LSA uses Singular Value Decomposition (SVD) to reduce the rank of the term-document matrix, allowing matrices for both documents to be compared via cosine similarity.
+		
+		However, LSA has limitations regarding contextual ambiguity; for example, the word "bank" can refer to a financial institution or the side of a river, leading to misrepresentation in latent space. Additionally, LSA treats text as a "bag of words," ignoring word order. Consequently, the phrases "The dog chased the cat" and "The cat chased the dog" would be treated similarly despite their opposite meanings. Furthermore, SVD's reliance on input data quality and quantity necessitates large, high-quality training datasets. Latent Semantic Indexing (LSI), an application of LSA, is primarily used for information retrieval.
+		
+		\textbf{DISCO} (Extracting Distributionally Similar Words using CO-occurrences) is a tool developed by \href{https://www.linguatools.de/disco/disco_en.html}{Linguatools}. It extracts distributionally similar words by analyzing co-occurrence data from a large text corpus, examining how frequently words appear together within a defined context window. DISCO constructs co-occurrence matrices and uses similarity measures such as cosine similarity or Jaccard similarity to quantify relationships between words. It ranks similar words based on co-occurrence patterns and similarity scores, supporting multiple languages, including Arabic, Czech, Dutch, English, French, German, Italian, Russian, and Spanish.
+		
+		\item \textbf{String-Based Similarity} \\
+		This method evaluates the similarity of two strings based on their character composition and sequence. Some string-based similarity measures discussed include:
+		\begin{enumerate}
+			\item \textbf{Damerau-Levenshtein (DL) Distance} \\
+			This measure calculates the minimum number of operations required to transform string \( S_1 \) into string \( S_2 \), where operations can include insertion, deletion, transposition of characters, or substitution of a single character. Normalization \cite{1_gomaa2014arabic} is performed to compute similarity.
+			
+			\item \textbf{Longest Common Substring (LCS)} \\
+			This approach identifies the longest sequence of shared characters (substring) between two texts, which can be useful for detecting the presence of key ideas and references.
+			
+			\item \textbf{N-gram Similarity} \\
+			An n-gram is a contiguous sequence of \( n \) items from a given text, which may include characters, words, or even phonemes. This sliding window approach can be applied at either the character or word level. The text is first split into smaller units (n-grams) of various sizes, allowing for counting matching n-grams or calculating Jaccard similarity:
 			\begin{itemize}
-				\item Jacquard Similarity \\ $$J(A,B) = \frac{|A \cap B|}{|A \cup B|}$$ Where $A \cap B$ is the number of n-grams common to both texts, and $A \cup B$ is the total number of unique n-grams in both texts.
+				\item \textbf{Jaccard Similarity} \\
+				$$J(A,B) = \frac{|A \cap B|}{|A \cup B|}$$
+				where \( |A \cap B| \) is the number of n-grams common to both texts, and \( |A \cup B| \) is the total number of unique n-grams across both texts.
 			\end{itemize}
 		\end{enumerate}
 	\end{enumerate}
-	\textbf{Text similarity and dissimilarity measures} \\
-	These are statistical methods used to identify the degree of how two texts are alike. Higher the similarity, the more the texts are alike. The lower the dissimilarity, the more the texts are alike.
+	
+	\textbf{Text Similarity and Dissimilarity Measures} \\
+	Statistical methods are employed to identify the degree of similarity between two texts. Higher similarity indicates greater resemblance, while lower dissimilarity indicates closer alignment.
 	\begin{itemize}
-		\item Cosine Similarity \\ Given two vectors, it provides a cosine of the angle between those two vectors.
-		$$S_c (t_1, t_2) = \frac{t_1 \cdot t_2}{|t_1||t_2|}$$ Where cosine similarity of text 1 and text 2 is the dot product of these vectors divided by product of magnitudes of those vectors. Value ranges from 0 (least resemblance) to 1 (most resemblance).
+		\item \textbf{Cosine Similarity} \\
+		For two vectors, cosine similarity provides the cosine of the angle between them:
+		$$S_c(t_1, t_2) = \frac{t_1 \cdot t_2}{|t_1||t_2|}$$
+		Here, the cosine similarity of text 1 and text 2 is the dot product of these vectors divided by the product of their magnitudes. The value ranges from 0 (least resemblance) to 1 (most resemblance).
 	\end{itemize}
 	
 	\subsection{Model Evaluation Metrics} 
-	\subsubsection*{Kappa Score}
-	Also known as the Cohen Kappa Statistic, can be used to measure the agreement of classification models. It is considered more reliable than a simple agreement measure because it can take into account the possibility of agreement by chance. \\ Observed agreement $P_o$ is the proportion of similar scores by human rater and the AES system. $P_e$ is the hypothetical chance of agreement, based purely on the probability of both raters randomly assigning the same score. 
 	
-	$$k = \frac{P_o - P_e}{1 - P_e}$$
+	\subsubsection*{Kappa Score}
+	The Kappa Score, also known as Cohen's Kappa Statistic, measures the agreement of classification models. It is more reliable than simple agreement measures because it accounts for the possibility of chance agreement. The observed agreement \( P_o \) represents the proportion of similar scores assigned by human raters and the AES system, while \( P_e \) denotes the hypothetical chance of agreement based on the probability of both raters randomly assigning the same score. The Kappa Score is calculated as follows:
+	$$ k = \frac{P_o - P_e}{1 - P_e} $$
 	
 	\subsubsection*{Quadratic Weighted Kappa}
-	Weighted Kappa, not only takes the presence of agreement like Kappa does, but also takes into the seriousness of disagreement between raters as well. While Kappa is used for nominal variables, Weighted Kappa is used for ordinal variables (variables where the variables have ordered categories). \\
-	After calculating $P_o$ and $P_e$ these values are multiplied by a weights matrix. The weight determines the seriousness of disagreement between human and AES rating. Weights can be measured linearly as well as in a quadratic form. A matrix of $n \times n$ for the expected frequency of pair ${i, j}$ and a matrix for observed frequency of pair $i, j$ are made. Here, $i, j$ are the scores by both raters. \\
-	In order to determine the weight, the follow formula is used:
-	$$W_{i, j} = 1 - \frac{|i - j|}{n - 1}$$
-	$$W_{i, j} = 1 - \left( \frac{i - j}{n - 1} \right) ^2$$
+	Quadratic Weighted Kappa improves upon the traditional Kappa by considering not only the presence of agreement but also the severity of disagreement between raters. While Kappa applies to nominal variables, Quadratic Weighted Kappa is suitable for ordinal variables, where categories have a defined order. After calculating \( P_o \) and \( P_e \), these values are multiplied by a weights matrix to reflect the seriousness of disagreement between human and AES ratings. Weights can be defined linearly or quadratically. 
 	
-	Here, n is the possible categories or number of possible ratings. Calculation of the weight will be dependent on $i - j$, where $i, j \in \{ 1, 2, 3, \dots n$ \}. The greater the difference in score, the smaller the weight will be. Majority of evaluations use Quadratic Weighted Kappa (QWK). \\
-	Using the Weight $W$ matrix, Observed frequency matrix $O$, and Expected frequency matrix $E$, the score is measured:
-	$$k_W = \frac{\sum_{i, j} W_{i, j} \cdot O_{i, j} - \sum_{i, j} W_{i, j} \cdot E_{i, j}}{1 - \sum_{i, j} W_{i, j} \cdot E_{i,j}}$$
+	The weight \( W_{i,j} \) is determined using the following formulas:
+	\begin{align*}
+		W_{i,j} &= 1 - \frac{|i - j|}{n - 1} \\
+		W_{i,j} &= 1 - \left( \frac{i - j}{n - 1} \right) ^2
+	\end{align*}
+	Here, \( n \) represents the number of possible categories or ratings. The weight calculation is influenced by \( |i - j| \), where \( i,j \in \{ 1, 2, 3, \ldots, n \} \). A greater score difference results in a smaller weight. Most evaluations utilize the Quadratic Weighted Kappa (QWK).
+	
+	Using the weight matrix \( W \), observed frequency matrix \( O \), and expected frequency matrix \( E \), the score is computed as follows:
+	$$ k_W = \frac{\sum_{i,j} W_{i,j} \cdot O_{i,j} - \sum_{i,j} W_{i,j} \cdot E_{i,j}}{1 - \sum_{i,j} W_{i,j} \cdot E_{i,j}} $$
+	
 	\subsubsection*{Precision}
-	It is the proportion of correctly identified positive results out of all results that were predicted to be positive. In AES, precision measures how often the system's decision to assign a particular score (e.g., a high grade or a pass) was correct.
-	$$\text{Precision} = \frac{\text{True Positives (TP)}}{\text{False Positives (FP) + True Positives (TP)}}$$
+	Precision is defined as the proportion of correctly identified positive results among all results predicted to be positive. In AES, precision measures the accuracy of the system's decision to assign a particular score (e.g., a high grade or a pass):
+	$$ \text{Precision} = \frac{TP}{TP + FP} $$
+	
+	Where:
+	- \( TP \) is the number of true positives (correctly predicted positives),
+	- \( FP \) is the number of false positives (incorrectly predicted positives).
+	
 	\subsubsection*{Recall}
-	It is the proportion of actual positive results that were correctly identified by the system. Recall measures how well the system captures all the relevant essays that should have been assigned a particular score (e.g., all essays deserving a high grade).
-	$$\text{Recall} = \frac{\text{True Positives (TP)}}{\text{True Positives (TP) + False Negatives (FN)}}$$
-	\subsubsection*{F-Score}
-	It represents a weighted harmonic mean of precision and recall, where different weights can be assigned to precision and recall.
-	$$F_\beta = (1 + \beta^2) \times \frac{\text{Precision}}{\beta^2 \times \text{Precision} + \text{Recall}}$$. Majority of papers used the $F_1$ score, where $\beta = 1$ (precision and recall are considered to be of equal importance).
+	Recall, also known as sensitivity, refers to the ability of a model to identify all relevant cases (positives). In AES, recall assesses the model's ability to accurately score work that should have received a specific grade:
+	$$ \text{Recall} = \frac{TP}{TP + FN} $$
+	
+	Where:
+	- \( FN \) is the number of false negatives (missed positives).
+	
+	\subsubsection*{F1-Score}
+	The F1-Score is the harmonic mean of precision and recall. It provides a balance between these two metrics, useful when class distribution is uneven:
+	$$ F1 = 2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}} $$
+	
+	This metric is particularly relevant in AES contexts where both precision and recall are critical for assessing the quality of scoring systems.
 	
 	\subsection{Short Answer Scoring}
 	
@@ -387,13 +458,13 @@
 	
 	Feature selection in SVM aims to retain only the most important features that contribute to accurate classification. One common method is the F-score, which evaluates how well each feature differentiates between two classes (positive and negative). Features with higher F-scores are considered more significant. Other methods, like Recursive Feature Elimination (RFE) or mutual information, can also be used to rank and select features based on their contribution to the model's performance. \\ 
 	
-	\textbf{\textcite{4_abdeljaber2021wordnet}} used SVM with F-score measure to select the important features to score short answers. In addition, it used the Arabic WordNet to determine synonyms. Finally, the score is generated using cosine similarity of model answer and student answer matrices. They achieved $r$ of 0.99 with Arabic WordNet and 0.98 without the WordNet.
+	\textbf{\textcite{4_abdeljaber2021wordnet}} (Arabic) used SVM with F-score measure to select the important features to score short answers. In addition, it used the Arabic WordNet to determine synonyms. Finally, the score is generated using cosine similarity of model answer and student answer matrices. They achieved $r$ of 0.99 with Arabic WordNet and 0.98 without the WordNet.
 	
 	\subsubsection*{Transformer Approach in Short Answer Scoring}
-	\textbf{\textcite{22_meccawy2023mining}} also experimented with different approaches. They used ARASAG and \textcite{16_rababah2017short}'s dataset. FARASA was used for light stemmming and ISRI stemmer was used for base stemming. One approach was to use the Arabic WordNet to consider synonyms and then semantic similarity by cosine similarity. The second approach was to utilize Word2Vec. It is a word embedding technique that presents words as vectors in a vector space and the closer the words are, the greater the similarity of their meanings. AraVec was used as the Word2Vec model. The third approach as to use BERT based approach, utilizing AraBERT. Cosine similarity was used for the similarity measure. Their methods performed better overall when using light stemming. The best RMSE achieved was through BERT (1.04), which was significantly better than any other method. Best $r$ was obtained by using Word2Vec (0.78) in ARASAG dataset. The same model, when trained and applied on the Rababah's dataset, achieved greater $r$ (0.84) and performed slightly better with base stemming approach. \\
+	\textbf{\textcite{22_meccawy2023mining}} (Arabic) also experimented with different approaches. They used ARASAG and \textcite{16_rababah2017short}'s dataset. FARASA was used for light stemmming and ISRI stemmer was used for base stemming. One approach was to use the Arabic WordNet to consider synonyms and then semantic similarity by cosine similarity. The second approach was to utilize Word2Vec. It is a word embedding technique that presents words as vectors in a vector space and the closer the words are, the greater the similarity of their meanings. AraVec was used as the Word2Vec model. The third approach as to use BERT based approach, utilizing AraBERT. Cosine similarity was used for the similarity measure. Their methods performed better overall when using light stemming. The best RMSE achieved was through BERT (1.04), which was significantly better than any other method. Best $r$ was obtained by using Word2Vec (0.78) in ARASAG dataset. The same model, when trained and applied on the Rababah's dataset, achieved greater $r$ (0.84) and performed slightly better with base stemming approach. \\
 	
 	
-	\textbf{\textcite{23_ghazawi2024bert}} has introduced AR-RES, one of the largest publicly available datasets for Arabic AES. The dataset consists of questions and answers from different topics, divided by genders as well. They utilized ISRI stemmer for their preprocessing and the AraBERT tokenizer for tokens. After training the model on AraBERT their model achieved a QWK score of 0.884 and an F1 score of 0.78. The performance of their model exceeded in some topics than others. They explained this to be because of the complexity of certain topics: the model showed lower performance in topics like Management Information Systems, where the course had more open-ended answers while answers in courses like Chemistry were source dependent and controller and therefore the model performed better. 
+	\textbf{\textcite{23_ghazawi2024bert}} (Arabic) has introduced AR-RES, one of the largest publicly available datasets for Arabic AES. The dataset consists of questions and answers from different topics, divided by genders as well. They utilized ISRI stemmer for their preprocessing and the AraBERT tokenizer for tokens. After training the model on AraBERT their model achieved a QWK score of 0.884 and an F1 score of 0.78. The performance of their model exceeded in some topics than others. They explained this to be because of the complexity of certain topics: the model showed lower performance in topics like Management Information Systems, where the course had more open-ended answers while answers in courses like Chemistry were source dependent and controller and therefore the model performed better. 
 	
 	\subsection{Long Text Essay Scoring}
 	\subsubsection*{Measure of Coherence with Discourse Analysis}
@@ -402,7 +473,7 @@
 	\textbf{\textcite{6_ghamdi2014hybridarabic}} (Arabic) presented Abbir, a hybrid AEE for essays in Arabic language. They built an LSA concept space and also measured surface level features by measuring spelling mistakes and number of words. In the training phase, the LSA concept space was built using a training dataset and the LSA distance. Best result achieved by including LSA with stemming, word distance, and spelling mistake distance was $r$ of 0.78 and RMSE of 0.89. Their threshold value $t$ was set to be 17\% of the overall score. 
 	
 	\subsubsection*{Rule based approaches}
-	\textbf{\textcite{7_qahtani2019rulebased}} used MADAMIRA \cite{pasha2014madamira} for morphological analysis during preprocessing for part-of-speech tagging and stemming words. Spelling errors were identified using FARASA spell checker. The paper also considers structure of essay by considering the essay to be divided into introduction, main body, and conclusion. Coherence of the answers was measured by counting discourse connectives. They also measured checked for punctuation marks and style level by counting frequency of repeated words. Threshold was set for 16\% of the overall score. 73\% of the scores were considered to be within acceptable range.
+	\textbf{\textcite{7_qahtani2019rulebased}} (Arabic) used MADAMIRA \cite{pasha2014madamira} for morphological analysis during preprocessing for part-of-speech tagging and stemming words. Spelling errors were identified using FARASA spell checker. The paper also considers structure of essay by considering the essay to be divided into introduction, main body, and conclusion. Coherence of the answers was measured by counting discourse connectives. They also measured checked for punctuation marks and style level by counting frequency of repeated words. Threshold was set for 16\% of the overall score. 73\% of the scores were considered to be within acceptable range.
 	
 	
 	\subsubsection*{Transformer Model and Deep Learning approaches}
@@ -423,16 +494,16 @@
 	\textbf{\textcite{11_walia2024hybrid}} (Hindi) used a similar approach to \textcite{10_singh2023hindi}, utilizing LSTM and a transformer model. They implemented a Hybrid PSO (Particle Swarm Optimization) based approach for LSTM and RoBERTa. The model achieved an overall accuracy of 95\%. Details of the datasets, however, were not shared.
 	
 	\subsubsection*{Information Retrieval Approaches}
-	\textbf{\textcite{17_abbas2015svm}} focuses on VSM and Latent Semantic Indexing in web-based learning. Information retrieval (IR) is applied to extract information from the text. Each query for IR  The idea behind VSM is to represent each essay as a vector as a point in space. \\ Similarity between the vector and the query is done through matching functions. The model generates an vector for each essay and for each query from sets of terms with their weights. The weight of each term is identified through TF-IDF. Then, the cosine similarity between the vector for the query and the vector of the essay is measured. \\ In the second stage of the model, they implemented LSI, where they built the term document matrix. Instead of performing SVD, they performed truncated SVD, which they claimed, could help reduce noise and remove unnecessary information for their application. The result for the LSI score is found by cosine similarity between the LSI vector (after truncated SVD) and a query (vector consisted of terms for the query). As new documents get added to the LSI space, the term document matrix needs to be recalculated. Instead of rebuilding the matrix from scratch, they suggested folding in to reconstruct the matrix. The final score generated was the average of the VSM score and the LSI score. The dataset used in the study was not large, consisting of 30 essays. Their model correctly scored 23/30 essays. They achieved a correlation of 0.978. \\
+	\textbf{\textcite{17_abbas2015svm}} (Arabic) focuses on VSM and Latent Semantic Indexing in web-based learning. Information retrieval (IR) is applied to extract information from the text. Each query for IR  The idea behind VSM is to represent each essay as a vector as a point in space. \\ Similarity between the vector and the query is done through matching functions. The model generates an vector for each essay and for each query from sets of terms with their weights. The weight of each term is identified through TF-IDF. Then, the cosine similarity between the vector for the query and the vector of the essay is measured. \\ In the second stage of the model, they implemented LSI, where they built the term document matrix. Instead of performing SVD, they performed truncated SVD, which they claimed, could help reduce noise and remove unnecessary information for their application. The result for the LSI score is found by cosine similarity between the LSI vector (after truncated SVD) and a query (vector consisted of terms for the query). As new documents get added to the LSI space, the term document matrix needs to be recalculated. Instead of rebuilding the matrix from scratch, they suggested folding in to reconstruct the matrix. The final score generated was the average of the VSM score and the LSI score. The dataset used in the study was not large, consisting of 30 essays. Their model correctly scored 23/30 essays. They achieved a correlation of 0.978. \\
 	
 	
 	\textbf{\textcite{24_islam2013abess}} (Bengali) also built a model utilizing information retrieval and GLSA (generalized latent semantic analysis). They created an n-gram document matrix by first determining the index terms. The n-grams are weighted by multiplication of frequency of n-grams by n. Then, SVD is carried out on the n-gram document matrix. A query matrix is created from a submitted essay and cosine similarity of the query vector with with term-document matrix determines the grade. They achieved precision and recall of 98\%. 
 	
 	\subsubsection*{Hybrid Approaches in long essay systems}
-	\textbf{\textcite{5_aljouie2017schoolchildren}} uses LSA of the student answer against the training dataset. It uses RST to determine 40\% of the score, LSA for 50\% of the score, and 10\% of the score is measured by spelling mistakes. \\ They set the threshold to be 1.5 marks and achieved an accuracy of 78.33\% \\
+	\textbf{\textcite{5_aljouie2017schoolchildren}} (Arabic) uses LSA of the student answer against the training dataset. It uses RST to determine 40\% of the score, LSA for 50\% of the score, and 10\% of the score is measured by spelling mistakes. \\ They set the threshold to be 1.5 marks and achieved an accuracy of 78.33\% \\
 	
 	
-	\textbf{\textcite{18_alqahtani2020svr}} categorized the features extracted from the text into surface level (quantitative measures for counting words), syntactic (presence of POS and mistakes), lexical (presence of certain keywords, punctuation features etc.), semantic (using Arabic WordNet and word embedding) and discourse (identifying discourse connectives). In the first part of the paper they presented a thorough list of features that they were able to extract from the text. In the second part of their paper, they proposed 4 models.
+	\textbf{\textcite{18_alqahtani2020svr}} (Arabic) categorized the features extracted from the text into surface level (quantitative measures for counting words), syntactic (presence of POS and mistakes), lexical (presence of certain keywords, punctuation features etc.), semantic (using Arabic WordNet and word embedding) and discourse (identifying discourse connectives). In the first part of the paper they presented a thorough list of features that they were able to extract from the text. In the second part of their paper, they proposed 4 models.
 	\begin{enumerate}
 		\item Spelling model. Necessary features were identified and the FARASA spell checker was used. They also assessed the performance of FARASA on their dataset where there was cases where it failed to correct the mistake (3.4\%) or corrected a word that was already correct (10.1\%). At $t = 17\%$ and $t = 25\%$, it achieved $r$ of 0.65, 0.72 respectively.
 		\item Structure model identified structure of the text using surface level and some lexical features like presence of keywords. At $t = 17\%$ and $t = 25\%$, it achieved $r$ of 0.74, 0.86 respectively.
@@ -441,8 +512,8 @@
 		\item Punctuation marks model used punctuation and discourse features to determine correct usage of marks. At $t = 17\%$ and $t = 25\%$, it achieved accuracy of 90\% and 96\% respectively. 
 	\end{enumerate}
 	Overall, the model achieved 96\% accuracy and 0.87 correlation. \\
-	\textbf{\textcite{26_alsanie2022threelevels}} worked by improving the existing model by \textcite{6_ghamdi2014hybridarabic}. The model evaluated the essay’s style in terms of syntactic structure and spelling, while analyzing its content through lexical semantics. A context-free grammar model was employed; however, due to the need for language contextualization and the difficulty in distinguishing between salient and anomalous language constructs, the model was lexicalized and enhanced with probabilistic rule choices, converting it into a stochastic lexicalized context-free grammar. Sub-tree kernels and Support Vector Machines (SVMs) were used for syntactic measurements, with flexibility in the SVM to account for dataset uncertainty. Latent Semantic Analysis (LSA) was also applied, and logistic regression was used to determine the final score. The model outperformed \textcite{6_ghamdi2014hybridarabic} and achieved best QWK of 0.68 and accuracy of 51\% while \textcite{6_ghamdi2014hybridarabic}'s model achieved best QWK and accuracy of 0.34 and 44\%, respectively.
-	
+	\textbf{\textcite{26_alsanie2022threelevels}} (Arabic) worked by improving the existing model by \textcite{6_ghamdi2014hybridarabic}. The model evaluated the essay’s style in terms of syntactic structure and spelling, while analyzing its content through lexical semantics. A context-free grammar model was employed; however, due to the need for language contextualization and the difficulty in distinguishing between salient and anomalous language constructs, the model was lexicalized and enhanced with probabilistic rule choices, converting it into a stochastic lexicalized context-free grammar. Sub-tree kernels and Support Vector Machines (SVMs) were used for syntactic measurements, with flexibility in the SVM to account for dataset uncertainty. Latent Semantic Analysis (LSA) was also applied, and logistic regression was used to determine the final score. The model outperformed \textcite{6_ghamdi2014hybridarabic} and achieved best QWK of 0.68 and accuracy of 51\% while \textcite{6_ghamdi2014hybridarabic}'s model achieved best QWK and accuracy of 0.34 and 44\%, respectively.
+
 	
 	\section{Discussion}
 	
@@ -479,27 +550,30 @@
 		\caption{Number of Papers Utilizing Each Method}
 		\label{tab::papertypes}
 	\end{table}
-	Table \ref{tab::papertypes} the number of papers that assessed and used a certain technique in their paper. The table also considers papers that used multiple approaches. While string based methods were computationally efficient they did not capture semantic meaning. Therefore, majority of papers utilized this approach alongside a semantic measure. \\ Many papers used Latent Semantic Analysis (LSA) as a key method to measure corpus based similarity. Since LSA is built using a term-document matrix, where the matrix represents the frequency of terms across a set of documents, LSA and its extension Latent Semantic Indexing (LSI) typically require reprocessing the entire matrix and recalculating the singular value decomposition (SVD) matrix. If the matrix is large, this operation can be computationally expensive, posing a significant challenge when dealing with large-scale datasets. In comparison, scalable approaches using deep learning and transformer models, such as BERT and GPT, may help resolve this problem by handling semantic relationships more effectively without relying on explicit matrix factorization.
+	Table \ref{tab::papertypes} presents the number of papers that assessed and employed specific techniques in their research, considering those that utilized multiple approaches. While string-based methods were computationally efficient, they failed to capture semantic meaning. Consequently, the majority of papers employed this approach in conjunction with a semantic measure. \\
 	
-	\textcite{17_abbas2015svm} proposed a workaround to LSA’s computational limitations by employing a "folding-in" method. Instead of recalculating the entire SVD from scratch whenever a new essay is added, the new essay was mapped into the existing LSA space by projecting it onto the original SVD components. This significantly reduced the computational overhead.
+	Many studies utilized Latent Semantic Analysis (LSA) as a primary method for measuring corpus-based similarity. LSA constructs a term-document matrix representing the frequency of terms across a set of documents. However, LSA and its extension, Latent Semantic Indexing (LSI), typically require reprocessing the entire matrix and recalculating the singular value decomposition (SVD) matrix. When dealing with large matrices, this operation can be computationally expensive, posing significant challenges for large-scale datasets. In contrast, scalable approaches using deep learning and transformer models, such as BERT and GPT, may effectively address this problem by handling semantic relationships without relying on explicit matrix factorization. \\
 	
-	LSA’s bag-of-words nature leads to another limitation: it cannot capture word order or syntactic nuances. This inability to differentiate between sentences that contain the same words but in a different order can affect the accuracy of the model, particularly in cases where student answers might use similar words as the model answer but convey completely different meanings. For example, "The essay argues against X" versus "The essay argues for X" would be treated similarly by an LSA-based system, despite the opposite meanings conveyed.
+	\textcite{17_abbas2015svm} proposed a workaround to LSA’s computational limitations by employing a "folding-in" method. Instead of recalculating the entire SVD from scratch whenever a new essay is added, the new essay is projected onto the existing LSA space using the original SVD components. This significantly reduces computational overhead. \\
 	
-	To mitigate some of these issues, \textcite{26_alsanie2022threelevels} utilized a parser algorithm in combination with LSA to analyze sentence structure and dependencies, allowing for a more refined assessment of the essay’s content.
+	However, LSA’s bag-of-words nature introduces another limitation: it cannot capture word order or syntactic nuances. This inability to differentiate between sentences containing the same words in a different order can impact the model's accuracy, especially when student answers use similar words as model answers but convey entirely different meanings. For instance, "The essay argues against X" versus "The essay argues for X" would be treated similarly by an LSA-based system, despite conveying opposite meanings. \\
 	
-	Recent advances in AES have moved towards the use of deep learning models, particularly those based on neural networks and transformers, which can better account for word order, context, and semantic relationships. 
+	To address some of these issues, \textcite{26_alsanie2022threelevels} combined LSA with a parser algorithm to analyze sentence structure and dependencies, enabling a more refined assessment of the essay’s content. \\
 	
-	Support Vector Machines (SVM) have been utilized for both classification and regression tasks in AES, particularly in systems that involve scoring rubrics. SVMs are well-suited for tasks where the feature space is relatively well-defined, such as specific grading categories (e.g., grammar, coherence). However, the performance of SVMs can degrade when the feature space is large or noisy, which is often the case in long-text essays that contain diverse expressions and stylistic variations. To account for these challenges, some studies have proposed less rigid implementations of SVM \cite{17_abbas2015svm}, allowing for greater flexibility in the presence of dataset uncertainty.
+	Recent advancements in AES have shifted towards the use of deep learning models, particularly those based on neural networks and transformers, which better account for word order, context, and semantic relationships. \\
 	
-	Transformer models, using BERT and its variants, pre-trained on large text corpora, have the advantage of being more scalable, as they can process text in a parallelized manner and fine-tune on essay-specific tasks. The multilingual models can be applied in various applications which can make the technique more transferable than others. However, training them is resource intensive and requires a large corpus. Currently, the performance of BERT was assessed by \textcite{9_firoozi2024bert} and showed a drop in performance when assessing advanced level essays. 
+	Support Vector Machines (SVM) have been utilized for both classification and regression tasks in AES, particularly in systems involving scoring rubrics. SVMs are well-suited for tasks where the feature space is relatively well-defined, such as specific grading categories (e.g., grammar, coherence). However, the performance of SVMs can degrade when the feature space is large or noisy, which is often the case in long-text essays containing diverse expressions and stylistic variations. To address these challenges, some studies have proposed less rigid implementations of SVM \cite{17_abbas2015svm}, allowing for greater flexibility in the presence of dataset uncertainty. \\
+	
+	Transformer models, such as BERT and its variants, which are pre-trained on large text corpora, offer scalability by processing text in a parallelized manner and fine-tuning on essay-specific tasks. Multilingual models can be applied across various applications, making the technique more transferable than others. However, training these models is resource-intensive and requires a substantial corpus. Current assessments of BERT's performance by \textcite{9_firoozi2024bert} indicated a decline in effectiveness when evaluating advanced-level essays. 
 	
 	\section{Conclusion}
 	
 	\includegraphics{img/paperstrend.pdf}
 	
-	To conclude, the future of AES for low-resource languages looks promising, though there are challenges to overcome. The primary challenge is the limited availability of training datasets. The graph shows that traditional techniques, such as corpus-based similarity methods like LSA, have been prevalent over time. However, with the introduction of transformer architectures, there has been a noticeable rise in deep learning and transformer-based approaches due to their superior ability to measure semantics. We hope that ongoing advancements will make these powerful models more accessible and effective for low-resource languages, ultimately improving the accuracy and fairness of AES systems across diverse linguistic contexts.
+	In conclusion, the future of AES for low-resource languages appears promising, although challenges remain. The primary challenge is the limited availability of training datasets. The graph illustrates that traditional techniques, such as corpus-based similarity methods like LSA, have dominated over time. However, the emergence of transformer architectures has led to a notable increase in deep learning and transformer-based approaches due to their superior capacity for semantic measurement. We anticipate that ongoing advancements will make these powerful models more accessible and effective for low-resource languages, ultimately improving the accuracy and fairness of AES systems across diverse linguistic contexts. \\
 	
-	Certainly, coupling scores with feedback is crucial for learners. It is necessary to provide more detailed explanations for the scores attributed, as this can greatly enhance the learning experience. A significant drawback observed in the literature is the lack of feedback and explanations accompanying the grades. Many studies had to rely on translating datasets instead of using organic corpora, which could affect the quality of the results. The general scarcity of datasets further exacerbates these issues. Addressing these concerns by integrating detailed feedback and improving dataset availability will be essential for developing more effective and equitable AES systems.
+	Coupling scores with feedback is essential for enhancing the learning experience. Providing detailed explanations for scores is crucial, as it significantly benefits learners. A significant drawback observed in the literature is the lack of feedback and explanations accompanying grades. Many studies relied on translating datasets instead of utilizing organic corpora, potentially affecting result quality. The general scarcity of datasets exacerbates these issues. Addressing these concerns by integrating comprehensive feedback and improving dataset availability will be critical for developing more effective and equitable AES systems.
+	
 	
 	% \bibliographystyle{IEEEtran}
 	\printbibliography
